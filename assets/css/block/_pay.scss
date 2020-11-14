@@ -1,0 +1,104 @@
+.section9{
+    background-color: #F7FCFF;
+    .Pay{
+        margin-bottom: 40px;
+        h1{
+            display: flex;
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 60px;
+            /* identical to box height */
+            text-transform: capitalize;
+            color: #008EFF;
+            .section9_i{
+                display: block;
+                width: 30%;
+                height: 3px;
+                background:#008EFF;
+                border: 1px solid #008EFF;
+                margin:30px 20px;
+            }
+            }
+            .payment_type{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .img_click{
+                    border-left: 2px solid #008EFF;
+                    border-right: 2px solid #008EFF;
+                    padding:0 40px
+                }
+                padding-bottom: 50px;
+        }
+        .oferta{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .oferta_checkbox_input{
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+            }
+            .button{
+                display: inline-block;
+                outline: none;
+                background-color: transparent;
+                width: 300px;
+                height: 60px;
+                border: 3px solid #008EFF;
+                border-radius: 50px;
+                text-align: center;
+                cursor: pointer;
+                transition: all ease 0.5s;
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0.065em;
+                color: #008EFF;
+                box-sizing: border-box;
+                margin-bottom: 50px;
+            }
+
+            .button.active{
+                    left: 50% +110px ;
+                    font-size: 0px;
+                    width: 50px;
+                    height: 50px;
+                    border-left-color: transparent;
+                    animation: rotate .8s ease 0.5s infinite;
+                    @keyframes rotate{
+                        0%{
+                            transform: rotate(360deg);
+                        }
+                    }
+                    }
+            .button.success{
+                    position: relative;
+                    border-color: #008EFF;
+                    animation: bounce .3s ease-in;
+                    @keyframes bounce {
+                        0%{
+                            transform: scale(0.9);
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        background: url('../img/checked.svg') no-repeat;
+                        left: 0px;
+                        right: 0px;
+                        top: 8px;
+                        margin: 0 auto;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }

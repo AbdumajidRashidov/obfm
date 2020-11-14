@@ -1,0 +1,125 @@
+.section4 {
+  height: auto;
+  background-color: #F7FCFF;
+}
+.section4 h1 {
+  display: flex;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 67px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+  padding: 30px 0;
+}
+.section4 h1 .section4_i {
+  display: block;
+  width: 40%;
+  height: 3px;
+  background: black;
+  margin-top: 35px;
+  border: 1px solid black;
+  margin-left: 20px;
+}
+.section4 .section4_slider {
+  width: 100%;
+  height: 100%;
+}
+.section4 .section4_slider .slick-track {
+  background-color: #F7FCFF;
+}
+.section4 .section4_slider .section4_item {
+  width: 30px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #Ffffff;
+  margin-bottom: 70px;
+  outline: 0;
+  /* SKILL 1 */
+}
+.section4 .section4_slider .section4_item .section4_item_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.section4 .section4_slider .section4_item .section4_item_paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.section4 .section4_slider .section4_item .costs {
+  font-family: Californian FB;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+}
+.section4 .section4_slider .section4_item .section4_img {
+  width: 100%;
+}
+.section4 .section4_slider .section4_item .skill {
+  position: relative;
+  overflow-x: hidden;
+  border-radius: 7px;
+  bottom: 20px;
+  width: 90%;
+  left: 15px;
+}
+.section4 .section4_slider .section4_item .skill:before {
+  width: 100%;
+  height: 30px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #C9C9C9;
+  bottom: 0;
+}
+.section4 .section4_slider .section4_item .skill-bar {
+  width: 100%;
+  height: 30px;
+  background: #02477D;
+  display: block;
+  position: relative;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.section4 .section4_slider .section4_item .skill1 {
+  width: 95%;
+}
+.section4 .section4_slider .section4_item .skill-bar span {
+  position: absolute;
+  top: -30px;
+  padding: 30px 0 0 0;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #FFFFFF;
+  right: 0;
+}
+.section4 .section4_slider .section4_item .skill-bar {
+  position: relative;
+}
+.section4 .section4_slider .section4_item:hover {
+  transform: scale(1.04);
+  transition: ease-in-out 0.4s all;
+  border-radius: 7px;
+}

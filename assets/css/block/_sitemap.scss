@@ -1,0 +1,55 @@
+.section11{
+    .sitemap_button{
+        width: 70px;
+        position: relative;
+        left: 50px;
+        bottom: 50px;
+     }
+     .sitemap_collapse{
+         width: 200px;
+         height: 60px;
+         background-color: #008EFF;
+         padding-bottom: 23px;
+         padding: 15.6px 20px 23px 26px;
+         margin-left: 44px;
+         margin-bottom: 0;
+         font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        position: relative;
+        bottom: 50px;
+         &:hover{
+             text-decoration: none;
+         }
+      }
+}
+.sitemap{
+    padding: 37px 40px 40px 80px;
+    font-family:Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        li{ 
+            list-style:circle;
+            margin-top: 10px;
+            &:hover{
+                list-style-type: disc;
+            }
+            a{
+                font-family: Playfair Display;
+                color: #FFFFFF;
+                font-size: 16px;
+                &:hover{
+                    text-decoration: underline;
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+}

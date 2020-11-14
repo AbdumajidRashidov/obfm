@@ -1,0 +1,25 @@
+.section1{
+    background-color: #F7FCFF;
+    padding:0px 0 30px 0;
+    .hero_slider{
+        .single-item-hero{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            .slick-dots{
+                margin-bottom: 50px;
+            }
+            .slick-dots li.slick-active button:before{
+                transform: scale(2);
+                transition: all 0.3s ease-in-out;
+                opacity: 1;
+            }
+            .slick-dots li button:before{
+               font-size: 10px;
+               color: #F7FCFF;
+               opacity: 0.5;
+            }
+        }
+    }
+}

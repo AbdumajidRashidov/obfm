@@ -1,0 +1,97 @@
+.section12{
+    background: #008EFF;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        margin-bottom: 70px;
+        .first_column , .third_column{
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+        .second_column{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            .social_media{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .fa-instagram , .fa-twitter, .fa-facebook,.fa-youtube,.fa-telegram{
+                    width: 39px;
+                    height: 39px;
+                    margin: 0 10px;
+                    color: #FFFFFF;
+                    filter: drop-shadow(0px 5px 10px rgb(173, 172, 172));
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                .fa-instagram {
+                    border-radius: 10px;
+                    &:hover{
+                        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+                    }
+                }
+                .fa-twitter{
+                    &:hover{
+                        color: rgb(0, 172,238);
+                        filter: drop-shadow(0px 5px 10px   rgb(0, 172,238))
+                    }
+                }
+                .fa-facebook{
+                    border-radius: 50%;
+                    border-color:  rgb(59, 89, 159);
+                    &:hover{
+                        color: rgb(59, 89, 159);
+                        background: #FFFFFF;
+                    }
+                }
+                .fa-youtube{
+                    width: 45px;
+                    height: 39px;
+                    border-radius: 35%;
+                    
+                    &:hover{
+                        color: rgb(255, 0, 0);
+                        background-color: #FFFFFF;
+                    }
+                }
+                .fa-telegram{
+                    border-radius: 50%;
+                    &:hover{
+                    color:rgb(0, 136, 204);
+                    background-color: #FFFFFF;
+                    }
+                }
+            }
+            .name_of_year{
+               a{
+                   img{
+                       width: 300px;
+                   }
+               }
+            }
+        }
+    }
+    .copywrite{
+        text-align: center;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        /* identical to box height */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+}

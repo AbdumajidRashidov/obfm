@@ -1,0 +1,78 @@
+.section6{
+    .section6_head{
+        display: flex;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 67px;
+        /* identical to box height */
+        text-transform: capitalize;
+        color: #008EFF;
+        padding: 30px 0;
+        i{
+            display: block;
+            width: 30%;
+            height: 3px;
+            background: #008EFF;
+            margin-top: 35px;
+            border: 1px solid #008EFF;
+        }
+    }
+    .section6_left, .section6_right{
+        padding:0 10px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+            position: relative;
+        }
+        .section6_left_1{
+            height: 50px;;
+        }
+        .section6_left_1_p{  
+            font-family:  Playfair Display;
+            position: relative;
+            bottom: 70px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-left: 20px;
+        }
+        .section6_left_bottom_p{  
+            font-family:  Playfair Display;
+            position: relative;
+            bottom: 70px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-left: 20px;
+        }
+        .section6_right_p{  
+            font-family:  Playfair Display;
+            position: relative;
+            bottom: 70px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-left: 20px;
+        }
+        .section6_left_1, .section6_left_2{
+            padding: 0 10px;
+        }
+        .section6_left_bottom{
+            margin-top: -40px;
+            padding: 0 10px;
+            height: 80px;
+        }
+    }
+}

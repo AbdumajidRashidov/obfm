@@ -1,0 +1,8 @@
+[1028/202739.387:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1029/093215.823:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1029/144817.857:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Abdumajid\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\c6a0f7af-ce11-4445-90b6-f4d27bfb63dc: Системе не удается найти указанный путь. (0x3)
+[1030/215125.265:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1031/191657.793:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1101/120321.154:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1101/215920.429:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1102/180044.483:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

@@ -1,0 +1,173 @@
+.header{
+    background: linear-gradient(180deg, #008EFF 0%, rgba(0, 142, 255, 0.35) 110.48%);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 10px;
+    .header_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Californian FB;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        .logo_mahalla, .logo_xayriya{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 96px;
+                height: 90px;
+                margin-right: 20px;
+            }
+            .logo_xayriya_title{
+                width: max-content;
+                margin-right: 20px;
+            }
+        }
+        .buttons_group_helping{
+            .button_help1{ 
+                border:1px solid #FFFFFF;
+                border-radius: 30px;
+                width: 90%;
+                height: 40px;
+                padding: 10px 0;
+                margin-bottom: 15px;
+                animation:give;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes give {
+                    0%{
+                        background-color: #ff0000;
+                    }
+                    50%{
+                        background-color: #008EFF;
+                    }
+                    100%{
+                        background-color: #ff0000;
+                    }
+                }
+            }
+            .button_help2{ 
+                border:1px solid #FFFFFF;
+                border-radius: 30px;
+                width: 90%;
+                height: 40px;
+                margin-bottom: 15px;
+                animation:given;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                @keyframes given {
+                    0%{
+                        background-color: #008EFF;
+                    }
+                    50%{
+                        background-color: #ff0000;
+                    }
+                    100%{
+                        background-color: #008EFF;
+                    }
+                }
+            }
+        }
+    }
+    .header_bottom{
+        display: flex;
+        .navbarr{
+            display: flex;
+            margin-right: 20px;
+            .navbar_list{
+                display: flex;
+                justify-content:space-between;
+                padding-bottom: 8px;
+                border-bottom: 3px solid #FFFFFF;
+                .navbar_list_item{
+                    .navbar_list_item_link{
+                        font-family: Playfair Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        padding: 11px 10px;
+                        border-bottom: 3px solid #FFFFFF;
+                        position: relative; 
+                        &:hover{
+                            left: 0;
+                            border-bottom: 3px solid #ff0000;
+                            transition: all 0.5s ease ;
+                            color: #ff0000;
+                        }
+                    }
+                    .dropdown_menu_list{
+                        margin-top: 11px;
+                        border-radius: 10px;
+                        .dropdown-item{
+                            color: #008EFF;
+                            font-family: Playfair Display;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            margin-right: 10px;
+                            &:hover{
+                                width: 90%;
+                                transition:all 0.3s ease;
+                                transform: translateX(10px);
+                                background-color: #FFFFFF;
+                                color: #ff0000;
+                            }
+                        }
+                    }
+                }
+                .navbar_list_item:hover .dropdown-menu{
+                    display: block;
+                }
+            }
+        }
+        .control_icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .eye_icon_img_link{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+             .voice_icon_img_link, .poisk_icon_img_link{
+                display: inline;
+                margin: 0 15px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .dropdown-toggle{
+                padding: 10px;
+                border-radius: 50%;
+                font-family: Playfair Display;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                .dropdown-menu{
+                    a{
+                        color: #008EFF;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

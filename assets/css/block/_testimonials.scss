@@ -1,0 +1,93 @@
+.section5{
+    background:url('../img/bayroq.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    .quote1{
+        position: relative;
+        bottom: 190px;
+        left: 100px;
+        animation: float 2s infinite ease;
+    }
+    .quote2{
+        position: relative;
+        top:150px;
+        right: 100px;
+        animation: float 2s infinite ease-in-out;
+    }
+    @keyframes float {
+        0% {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+        }
+      
+        50% {
+          transform: translateY(1rem);
+          -webkit-transform: translateY(1rem);
+        }
+      
+        100% {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+        }
+      }
+      
+    .single-item-testimonials{
+            height: 328px;
+            width: 990px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border: 2px solid #ffffff;
+            .slick-dots li.slick-active button:before{
+                transform: scale(2);
+                transition: all 0.3s ease-in-out;
+                opacity: 1;
+            }
+            .slick-dots li button:before{
+               font-size: 10px;
+               color: #ffffff;
+               margin-top: 30px;
+               opacity: 0.5;
+            }
+        .testimonial{
+            height: 328px;
+            width: 990px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            outline: 0;
+            .testimonials_img{
+                width: 280px;
+                height: 330px;
+                margin-bottom: 30px;
+                margin-left: 20px;
+            }
+            .main_testimonial{
+                padding: 70px;
+                font-family: Poppins;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 39px;
+                text-align: justify;
+                color: #ffffff;
+                margin: 0;
+            }
+            .author_testimonial{
+                font-family: "Playfair Display";
+                font-style: italic;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+                /* identical to box height */
+                text-transform: capitalize;
+                color: #ffffff;
+                position: absolute;
+                top:250px;
+                margin-left: 590px;
+            }
+        }
+    }
+}

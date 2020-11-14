@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Playfair Display";
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+    &.focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn:focus, .btn.focus {
+    box-shadow: none;
+  }
+  @media (max-width: 450px){
+    .container {
+        max-width: 340px ;
+    }
+}
+  @media (max-width: 576px){
+    .container {
+        max-width: 450px ;
+    }
+}
+  @media (min-width: 576px){
+      .container {
+          max-width: 720px ;
+      }
+  }
+  @media (min-width: 768px) {
+      .container {
+          max-width: 990px;
+      }
+  }
+  @media (min-width: 992px) {
+      .container {
+          max-width: 1140px;
+      }
+  }
+  @media (min-width: 1200px) {
+      .container {
+          max-width: 1200px;
+      }
+  }

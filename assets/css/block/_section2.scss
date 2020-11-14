@@ -1,0 +1,92 @@
+
+.section2{
+    padding:20px 50px 50px 50px;
+    background-color: #F7FCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slide_fond_news{
+        width: 100%;
+        .slide_fond_news_item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            &:focus{
+                outline: none;
+            }
+                .slide_fond_news_img{
+                    width: 340px;
+                    height: 220px;
+                    opacity: 0.9;
+                    border-radius: 7px;
+                    margin-left: 30px;
+                    &:hover{
+                        opacity: 1;
+                        transition: ease-in-out 0.4s all;
+                        transform: scale(1.02);
+                    }
+                }
+                .wrap_fond_news_description{
+                    margin-left: 60px;
+                    width: 60%;
+                    h1{
+                        align-items: end;
+                        font-style: normal;
+                        font-weight: bold;
+                        display: flex;
+                        font-family: Playfair Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 47px;
+                        /* identical to box height */
+                        text-transform: capitalize;
+                        color: #008EFF;
+                        display: flex;
+                        i{
+                            display: block;
+                            width: 35%;
+                            background: #008EFF;;
+                            margin-top: 20px;
+                            border: 2px solid #008EFF;
+                            margin-right: 15px;
+                        }
+                    }
+                    p{
+                        font-size: 22px;
+                        text-align: justify;
+                        font-family: Playfair Display;
+                        margin-right: 10px;
+                        color: #008EFF;
+                    }
+                    .button_batafsil_link{
+                        width: 150px;
+                        display: block;
+                        color: #008EFF;
+                        text-decoration: none;
+                        padding-bottom: 10px;
+                        padding-left: 0;
+                        .button_batafsil{
+                            margin-top: 40px;
+                            display: flex;
+                            padding:5px 13px;
+                            width: 150px;
+                            border-color:#008EFF;
+                            border:2px solid;
+                            border-radius: 20px;
+                            filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.685));
+                            justify-content: space-around;
+                            &:hover{
+                                transform: scale(1.07);
+                                transition: all .3s ease-in-out;
+                            }  
+                        }
+                    }
+                    
+                }
+        }
+        
+    }
+    
+}
