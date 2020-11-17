@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/"
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abdumajid Rashidov",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "awesome": "0.0.7",

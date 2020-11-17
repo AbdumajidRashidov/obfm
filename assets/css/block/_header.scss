@@ -1,5 +1,5 @@
 .header{
-    background: linear-gradient(180deg, #008EFF 0%, rgba(255, 255, 255, 0.1) 110.48%);
+    background: linear-gradient(180deg, #190688 0%, rgba(255, 255, 255, 0.1) 110.48%);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -36,20 +36,9 @@
                 height: 40px;
                 padding: 10px 0;
                 margin-bottom: 15px;
-                animation:give;
-                animation-duration: 4s;
+                animation: pulse infinite ease;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
-                @keyframes give {
-                    0%{
-                        background-color: #ff0000;
-                    }
-                    50%{
-                        background-color: #008EFF;
-                    }
-                    100%{
-                        background-color: #ff0000;
-                    }
-                }
             }
             .button_help2{ 
                 border:1px solid #FFFFFF;
@@ -57,20 +46,28 @@
                 width: 90%;
                 height: 40px;
                 margin-bottom: 15px;
-                animation:given;
-                animation-duration: 4s;
+                animation: pulse infinite ease;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
-                @keyframes given {
-                    0%{
-                        background-color: #008EFF;
+                @keyframes pulse {
+                    0% {
+                      -webkit-transform: scale(1);
+                      -ms-transform: scale(1);
+                      transform: scale(1);
                     }
-                    50%{
-                        background-color: #ff0000;
+                  
+                    50% {
+                      -webkit-transform: scale(1.2);
+                      -ms-transform: scale(1.2);
+                      transform: scale(1.2);
                     }
-                    100%{
-                        background-color: #008EFF;
+                  
+                    100% {
+                      -webkit-transform: scale(1);
+                      -ms-transform: scale(1);
+                      transform: scale(1);
                     }
-                }
+                  }
             }
         }
     }
@@ -99,16 +96,15 @@
                         position: relative; 
                         &:hover{
                             left: 0;
-                            border-bottom: 3px solid #ff0000;
+                            border-bottom: 3px solid;
                             transition: all 0.5s ease ;
-                            color: #ff0000;
                         }
                     }
                     .dropdown_menu_list{
                         margin-top: 11px;
                         border-radius: 10px;
                         .dropdown-item{
-                            color: #008EFF;
+                            color: #190688;
                             font-family: Playfair Display;
                             font-style: normal;
                             font-weight: bold;
@@ -117,12 +113,13 @@
                             text-transform: uppercase;
                             text-decoration: none;
                             margin-right: 10px;
+                            opacity: 0.7;
                             &:hover{
                                 width: 90%;
                                 transition:all 0.3s ease;
                                 transform: translateX(10px);
                                 background-color: #FFFFFF;
-                                color: #ff0000;
+                               opacity: 1;
                             }
                         }
                     }
@@ -153,12 +150,13 @@
             .dropdown-toggle{
                 padding: 10px;
                 border-radius: 50%;
+                border: #FFFFFF 1px solid;
                 font-family: Playfair Display;
                 font-style: normal;
                 font-size: 20px;
                 line-height: 16px;
-                text-transform: uppercase;
                 color: #FFFFFF;
+                background-color: #190688 !important;
                 .dropdown-menu{
                     a{
                         color: #008EFF;
