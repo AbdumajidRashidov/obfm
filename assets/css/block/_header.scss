@@ -1,5 +1,5 @@
 .header{
-    background: linear-gradient(180deg, #190688 0%, rgba(255, 255, 255, 0.1) 110.48%);
+    background: linear-gradient(180deg, #190688 20%, rgba(255, 255, 255, 0.1) 110.48%);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -80,7 +80,6 @@
                 display: flex;
                 justify-content:space-between;
                 padding-bottom: 8px;
-                border-bottom: 3px solid #FFFFFF;
                 .navbar_list_item{
                     .navbar_list_item_link{
                         font-family: Playfair Display;
@@ -91,17 +90,12 @@
                         text-transform: uppercase;
                         text-decoration: none;
                         color: #FFFFFF;
-                        padding: 11px 10px;
-                        border-bottom: 3px solid #FFFFFF;
-                        position: relative; 
-                        &:hover{
-                            left: 0;
-                            border-bottom: 3px solid;
-                            transition: all 0.5s ease ;
-                        }
+                        padding: 10px 10px; 
+                        position: relative;
+                        display: block;
                     }
                     .dropdown_menu_list{
-                        margin-top: 11px;
+                        margin-top: 0px;
                         border-radius: 10px;
                         .dropdown-item{
                             color: #190688;
@@ -119,7 +113,7 @@
                                 transition:all 0.3s ease;
                                 transform: translateX(10px);
                                 background-color: #FFFFFF;
-                               opacity: 1;
+                                opacity: 1;
                             }
                         }
                     }

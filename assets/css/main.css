@@ -2081,16 +2081,16 @@ a {
   line-height: 47px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
   display: flex;
 }
 
 .section2 .slide_fond_news .slide_fond_news_item .wrap_fond_news_description h1 i {
   display: block;
   width: 35%;
-  background: #008EFF;
+  background: #190688;
   margin-top: 20px;
-  border: 2px solid #008EFF;
+  border: 2px solid #190688;
   margin-right: 15px;
 }
 
@@ -2099,13 +2099,13 @@ a {
   text-align: justify;
   font-family: Playfair Display;
   margin-right: 10px;
-  color: #008EFF;
+  color: #190688;
 }
 
 .section2 .slide_fond_news .slide_fond_news_item .wrap_fond_news_description .button_batafsil_link {
   width: 150px;
   display: block;
-  color: #008EFF;
+  color: #190688;
   text-decoration: none;
   padding-bottom: 10px;
   padding-left: 0;
@@ -2118,7 +2118,7 @@ a {
   display: flex;
   padding: 5px 13px;
   width: 150px;
-  border-color: #008EFF;
+  border-color: #190688;
   border: 2px solid;
   border-radius: 20px;
   -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.685));
@@ -2271,7 +2271,7 @@ a {
   font-family: Playfair Display;
   color: #ffffff;
   overflow: hidden;
-  background-color: #008EFF;
+  background-color: #190688;
 }
 
 .yangiliklar h1 {
@@ -2432,7 +2432,7 @@ a {
   line-height: 67px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
   padding: 30px 0;
 }
 
@@ -2440,9 +2440,9 @@ a {
   display: block;
   width: 40%;
   height: 3px;
-  background: #008EFF;
+  background: #190688;
   margin-top: 35px;
-  border: 1px solid #008EFF;
+  border: 1px solid #190688;
   margin-left: 20px;
 }
 
@@ -2475,7 +2475,7 @@ a {
   font-size: 36px;
   line-height: 42px;
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
 }
 
 .section4 .section4_slider .section4_item .section4_item_paragraph, .section4 .section4_slider2 .section4_item .section4_item_paragraph, .section4 .section4_slider1 .section4_item .section4_item_paragraph {
@@ -2485,7 +2485,7 @@ a {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
 }
 
 .section4 .section4_slider .section4_item .costs, .section4 .section4_slider2 .section4_item .costs, .section4 .section4_slider1 .section4_item .costs {
@@ -2496,7 +2496,7 @@ a {
   line-height: 29px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #ff0000;
+  color: #190688;
 }
 
 .section4 .section4_slider .section4_item .section4_img, .section4 .section4_slider2 .section4_item .section4_img, .section4 .section4_slider1 .section4_item .section4_img {
@@ -2525,7 +2525,7 @@ a {
 .section4 .section4_slider .section4_item .skill-bar, .section4 .section4_slider2 .section4_item .skill-bar, .section4 .section4_slider1 .section4_item .skill-bar {
   width: 100%;
   height: 30px;
-  background: #008EFF;
+  background: #190688;
   display: block;
   position: relative;
   border-bottom-right-radius: 10px;
@@ -2556,11 +2556,11 @@ a {
 }
 
 .section4 .section4_slider .section4_item:hover, .section4 .section4_slider2 .section4_item:hover, .section4 .section4_slider1 .section4_item:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
   -webkit-transition: ease-in-out 0.4s all;
   transition: ease-in-out 0.4s all;
   border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.2);
 }
 
 .statistika {
@@ -2578,15 +2578,15 @@ a {
   line-height: 67px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
 }
 
 .statistika h1 .section8_i {
   display: block;
   width: 60%;
   height: 3px;
-  background: #008EFF;
-  border: 1px solid #008EFF;
+  background: #190688;
+  border: 1px solid #190688;
   margin: 30px 20px;
 }
 
@@ -2596,11 +2596,11 @@ a {
 }
 
 #chartdiv svg g tspan {
-  fill: #008EFF;
+  fill: #190688;
 }
 
 #chartdiv svg g polyline {
-  stroke: #008EFF;
+  stroke: #190688;
 }
 
 .section9 {
@@ -2622,15 +2622,15 @@ a {
   line-height: 60px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
 }
 
 .section9 .Pay h1 .section9_i {
   display: block;
   width: 30%;
   height: 3px;
-  background: #008EFF;
-  border: 1px solid #008EFF;
+  background: #190688;
+  border: 1px solid #190688;
   margin: 30px 20px;
 }
 
@@ -2649,8 +2649,8 @@ a {
 }
 
 .section9 .Pay .payment_type .img_click {
-  border-left: 2px solid #008EFF;
-  border-right: 2px solid #008EFF;
+  border-left: 2px solid #190688;
+  border-right: 2px solid #190688;
   padding: 0 40px;
 }
 
@@ -2678,7 +2678,7 @@ a {
   background-color: transparent;
   width: 300px;
   height: 60px;
-  border: 3px solid #008EFF;
+  border: 3px solid #190688;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
@@ -2690,7 +2690,7 @@ a {
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.065em;
-  color: #008EFF;
+  color: #190688;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 50px;
@@ -2722,7 +2722,7 @@ a {
 
 .section9 .Pay .oferta .button.success {
   position: relative;
-  border-color: #008EFF;
+  border-color: #190688;
   -webkit-animation: bounce .3s ease-in;
           animation: bounce .3s ease-in;
 }
@@ -2760,7 +2760,7 @@ a {
   font-size: 44px;
   line-height: 60px;
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2775,8 +2775,8 @@ a {
   display: block;
   width: 30%;
   height: 3px;
-  background: #008EFF;
-  border: 1px solid #008EFF;
+  background: #190688;
+  border: 1px solid #190688;
   margin-top: 30px;
 }
 
@@ -2826,7 +2826,7 @@ a {
   font-size: 22px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
 }
 
 .foydali_havolalar .foydali_havolalar_items .logo_havola {
@@ -3030,7 +3030,7 @@ a {
   line-height: 67px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
   padding: 30px 0;
 }
 
@@ -3038,9 +3038,9 @@ a {
   display: block;
   width: 30%;
   height: 3px;
-  background: #008EFF;
+  background: #190688;
   margin-top: 35px;
-  border: 1px solid #008EFF;
+  border: 1px solid #190688;
 }
 
 .section6 .section6_left, .section6 .section6_right {
@@ -3195,7 +3195,7 @@ a {
   margin: 20px 0;
   width: 150px;
   display: block;
-  color: #008EFF;
+  color: #190688;
   text-decoration: none;
   padding-bottom: 10px;
   padding-left: 0;
@@ -3207,7 +3207,7 @@ a {
   display: flex;
   padding: 5px 13px;
   width: 150px;
-  border-color: #008EFF;
+  border-color: #190688;
   border: 2px solid;
   border-radius: 20px;
   -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.685));
@@ -3225,8 +3225,8 @@ a {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#190688), color-stop(110.48%, rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(180deg, #190688 0%, rgba(255, 255, 255, 0.1) 110.48%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #190688), color-stop(110.48%, rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(180deg, #190688 20%, rgba(255, 255, 255, 0.1) 110.48%);
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -3356,7 +3356,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 8px;
-  border-bottom: 3px solid #FFFFFF;
 }
 
 .header .header_bottom .navbarr .navbar_list .navbar_list_item .navbar_list_item_link {
@@ -3368,20 +3367,13 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 11px 10px;
-  border-bottom: 3px solid #FFFFFF;
+  padding: 10px 10px;
   position: relative;
-}
-
-.header .header_bottom .navbarr .navbar_list .navbar_list_item .navbar_list_item_link:hover {
-  left: 0;
-  border-bottom: 3px solid;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  display: block;
 }
 
 .header .header_bottom .navbarr .navbar_list .navbar_list_item .dropdown_menu_list {
-  margin-top: 11px;
+  margin-top: 0px;
   border-radius: 10px;
 }
 
@@ -3508,7 +3500,7 @@ a {
   line-height: 60px;
   /* identical to box height */
   text-transform: capitalize;
-  color: #008EFF;
+  color: #190688;
   margin: 50px 0;
 }
 
@@ -3516,8 +3508,8 @@ a {
   display: block;
   width: 40%;
   height: 3px;
-  background: #008EFF;
-  border: 1px solid #008EFF;
+  background: #190688;
+  border: 1px solid #190688;
   margin: 30px 20px;
 }
 
@@ -3576,7 +3568,7 @@ a {
 .section7 .mediateka_right .button_batafsil_link {
   width: 145px;
   display: block;
-  color: #008EFF;
+  color: #190688;
   text-decoration: none;
   float: right;
   margin: 10px 15px;
@@ -3588,7 +3580,7 @@ a {
   display: flex;
   padding: 5px 8px;
   width: 145px;
-  border-color: #008EFF;
+  border-color: #190688;
   border: 2px solid;
   border-radius: 20px;
   -ms-flex-pack: distribute;

@@ -10,15 +10,15 @@
         line-height: 67px;
         /* identical to box height */
         text-transform: capitalize;
-        color: #008EFF;
+        color: #190688;
         padding: 30px 0;
         .section4_i{
             display: block;
             width: 40%;
             height: 3px;
-            background: #008EFF;
+            background: #190688;
             margin-top: 35px;
-            border: 1px solid #008EFF;
+            border: 1px solid #190688;
             margin-left: 20px;
         }               
     }
@@ -44,7 +44,7 @@
                         font-size: 36px;
                         line-height: 42px;
                         text-transform: capitalize;
-                        color: #008EFF;
+                        color: #190688;
                     }
                     .section4_item_paragraph{
                         font-family: Playfair Display;
@@ -53,7 +53,7 @@
                         font-size: 20px;
                         line-height: 24px;
                         text-transform: capitalize;
-                        color: #008EFF;
+                        color: #190688;
                     }
                     .costs{
                         font-family:  Playfair Display;
@@ -63,7 +63,7 @@
                         line-height: 29px;
                         /* identical to box height */
                         text-transform: capitalize;
-                        color: #ff0000;
+                        color: #190688;
                     }
                     .section4_img{
                         width: 100%;
@@ -89,7 +89,7 @@
                     .skill-bar {
                         width: 100%;
                         height: 30px;
-                        background:#008EFF;
+                        background:#190688;
                         display: block;
                         position: relative;
                         border-bottom-right-radius: 10px;
@@ -120,9 +120,9 @@
                     
                 }
                 .section4_item:hover{
-                    transform: scale(1.04);
                     transition: ease-in-out 0.4s all;
                     border-radius: 7px;
+                    box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, .20);
                 } 
             }  
 }
