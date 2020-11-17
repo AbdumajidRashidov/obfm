@@ -11,7 +11,7 @@
         font-family: Playfair display;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
+        font-size: 30px;
         color: #FFFFFF;
         margin-bottom: 10px;
         .logo_mahalla, .logo_xayriya{
@@ -19,32 +19,63 @@
             justify-content: center;
             align-items: center;
             img{
-                width: 96px;
-                height: 90px;
+                width: 86px;
+                height: 80px;
                 margin-right: 20px;
+            }
+            .logo_mahalla_title{
+                font-size: 30px;
             }
             .logo_xayriya_title{
                 width: max-content;
                 margin-right: 20px;
+                font-size: 30px;
             }
         }
         .buttons_group_helping{
             .button_help1{ 
-                border:1px solid #FFFFFF;
+                border:1px solid #190688;
                 border-radius: 30px;
                 width: 90%;
-                height: 40px;
-                padding: 10px 0;
+                height: 35px;
+                padding: 8px 0;
                 margin-bottom: 15px;
-                animation: pulse infinite ease;
+                color: #190688;
+                background-color: #FFFFFF;
+                animation: pulse1 infinite ease;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
+                &:hover{
+                    color: #FFFFFF !important;
+                    background-color : #190688 !important;
+                }
+                @keyframes pulse1 {
+                    0% {
+                      -webkit-transform: scale(1.2);
+                      -ms-transform: scale(1.2);
+                      transform: scale(1.2);
+                    }
+                  
+                    50% {
+                      -webkit-transform: scale(1);
+                      -ms-transform: scale(1);
+                      transform: scale(1);
+                    }
+                  
+                    100% {
+                      -webkit-transform: scale(1.2);
+                      -ms-transform: scale(1.2);
+                      transform: scale(1.2);
+                    }
+                  }
             }
             .button_help2{ 
-                border:1px solid #FFFFFF;
+                border:2px solid #FFFFFF;
                 border-radius: 30px;
                 width: 90%;
-                height: 40px;
+                height: 35px;
+                padding-top: 5px;
+                padding-bottom: 5px;
                 margin-bottom: 15px;
                 animation: pulse infinite ease;
                 animation-duration: 2s;
@@ -127,38 +158,31 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 20px;
             .eye_icon_img_link{
                 img{
-                    width: 40px;
-                    height: 40px;
+                    width: 35px;
+                    height: 35px;
                 }
             }
              .voice_icon_img_link, .poisk_icon_img_link{
                 display: inline;
                 margin: 0 15px;
                 img{
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                 }
             }
             .dropdown-toggle{
-                padding: 10px;
+                padding: 7px;
                 border-radius: 50%;
                 border: #FFFFFF 1px solid;
                 font-family: Playfair Display;
                 font-style: normal;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 16px;
                 color: #FFFFFF;
                 background-color: #190688 !important;
-                .dropdown-menu{
-                    a{
-                        color: #008EFF;
-                        &:hover{
-                            color: #ff0000;
-                        }
-                    }
-                }
             }
         }
     }
