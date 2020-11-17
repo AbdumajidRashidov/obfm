@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>"Mahalla" xayriya jamoat fondi</title>
+        <!--Links-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="node_modules/lightgallery.js-master/lightgallery.js-master/dist/css/lightgallery.css">
+        <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+        <link rel="stylesheet" href="node_modules/jquery-nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+        <link rel="icon" href="assets/img/РАМЗИ_Mаҳалла фонд.png">
+        <link rel="stylesheet" href="node_modules/wowjs/css/libs/animate.css">
+        <link rel="stylesheet" href="node_modules/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css">
+        <script src="node_modules/fontawesome-free-5.15.1-web/js/all.js"></script>
+    </head>
+<body>
+    <header class="header" style="position: absolute; background-color: #190688;">
+        <div class="container">
+            <div class="row">
+                <div class="header_top">
+                    <div class="control_icons d-flex d-sm-flex d-md-none d-xl-none d-lg-none">
+                        <div class="control_icons_wrapp">
+                            <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
+                                <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
+                            </a>
+                            <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
+                            id="dropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> ўз
+                            </a>
+                            <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Uz</a>
+                                <a class="dropdown-item" href="#">Рус</a>
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                            <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
+                                <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
+                            </a>
+                        </div>
+                        <div onclick="openNav()" class="hamburger" >
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="30" >
+                                <path
+                                      class="line top"
+                                      d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path
+                                      class="line middle"
+                                      d="m 30,50 h 40" />
+                                <path
+                                      class="line bottom"
+                                      d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
+                        <!--sidebar-mobile-nav-->
+                        <div class="sidebar_nav">
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a data-toggle="collapse" href="#collapse_nav1" role="button" aria-expanded="false" aria-controls="collapse_nav">Фонд ҳакида</a>
+                                    <div id="collapse_nav1" class="collapse mobile_nav_link">
+                                        <a href="#" class="w3-button w3-block w3-left-align">Фонд ҳакида</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Раҳбарият</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Марказий аппарат</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Тузилма</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Низом</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Ҳудудий фондлар</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Тасарруфидаги ташкилотлар</a>
+                                    </div>
+                                <a data-toggle="collapse" href="#collapse_nav2" role="button" aria-expanded="false" aria-controls="collapse_nav">Матбуот хизмати</a>
+                                    <div id="collapse_nav2" class="collapse mobile_nav_link">
+                                        <a href="#" class="w3-button w3-block w3-left-align">Эълонлар</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Матбуот хизмати билан боғланиш</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Раҳбариятнинг чиқиш ва баёнотлари</a>
+                                    </div>
+                                <a data-toggle="collapse" href="#collapse_nav3" role="button" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
+                                    <div id="collapse_nav3" class="collapse mobile_nav_link">
+                                        <a href="#" class="w3-button w3-block w3-left-align">Ёрдам бермоқчиман</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Ёрдамга муҳтожман</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Кўрсатилган ёрдамлар</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Ҳисоб рақамлари</a>
+                                    </div>
+                                <a data-toggle="collapse" href="#collapse_nav4" role="button" aria-expanded="false" aria-controls="collapse_nav">Янгиликлар</a>
+                                    <div id="collapse_nav4" class="collapse mobile_nav_link">
+                                        <a href="#" class="w3-button w3-block w3-left-align">Фонд янгиликлари</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Ўзбекистон янгиликлари</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Жаҳон янгиликлари</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">“Саховат ва Кўмак” янгиликлари</a>
+                                    </div>
+                                <a data-toggle="collapse" href="#collapse_nav5" role="button" aria-expanded="false" aria-controls="collapse_nav">Медиатека</a>
+                                    <div id="collapse_nav5" class="collapse mobile_nav_link">
+                                        <a href="#" class="w3-button w3-block w3-left-align">Фотогалерея</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Видеогалерея</a>
+                                        <a href="#" class="w3-button w3-block w3-left-align">Аудиогалерея</a>
+                                    </div>
+                                <a href="#" class="mobile_nav_link">Алоқа</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="logos d-flex">
+                        <div class="logo_mahalla">
+                            <img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla">
+                            <h2 class="logo_mahalla_title">“Маҳалла” ҳайрия жамоат фонди</h2>
+                        </div>
+                        <div class="logo_xayriya">
+                            <img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya">
+                            <h2 class="logo_xayriya_title">“Саховат ва Кўмак” </h2>
+                        </div>
+                    </div>
+                    <div class="buttons_group_helping">
+                        <a class="btn button_help1">Ёрдам бермоқчиман</a>
+                        <a class="btn  button_help2">Ёрдамга Мухтожман</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-sm-none d-md-flex d-xl-flex d-lg-flex">
+                <div class="header_bottom">
+                    <div class="navbarr">
+                        <ul class="navbar_list">
+                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> Фонд ҳакида</a>
+                                <ul class="dropdown-menu dropdown_menu_list">
+                                    <li><a class="dropdown-item" href="#">Фонд ҳакида</a></li>
+                                    <li><a class="dropdown-item" href="#">Раҳбарият</a></li>
+                                    <li><a class="dropdown-item" href="#">Марказий аппарат</a></li>
+                                    <li><a class="dropdown-item" href="#">Тузилма</a></li>
+                                    <li><a class="dropdown-item" href="#">Низом</a></li>
+                                    <li><a class="dropdown-item" href="#">Ҳудудий фондлар</a></li>
+                                    <li><a class="dropdown-item" href="#">Тасарруфидаги ташкилотлар</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> матбуот хизмати</a>
+                                <ul class="dropdown-menu dropdown_menu_list">
+                                    <li><a class="dropdown-item" href="#">Эълонлар</a></li>
+                                    <li><a class="dropdown-item" href="#">Матбуот хизмати билан боғланиш</a></li>
+                                    <li><a class="dropdown-item" href="#">Раҳбариятнинг чиқиш ва баёнотлари</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> кўнгилли ёрдам </a>
+                                <ul class="dropdown-menu dropdown_menu_list">
+                                    <li><a class="dropdown-item" href="#">Ёрдам бермоқчиман</a></li>
+                                    <li><a class="dropdown-item" href="#">Ёрдамга муҳтожман</a></li>
+                                    <li><a class="dropdown-item" href="#">Кўрсатилган ёрдамлар</a></li>
+                                    <li><a class="dropdown-item" href="#">Ҳисоб рақамлари</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> янгиликлар</a>
+                                <ul class="dropdown-menu dropdown_menu_list">
+                                    <li><a class="dropdown-item" href="#">Фонд янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="#">Ўзбекистон янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="#">Жаҳон янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="#">“Саховат ва Кўмак” янгиликлари</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> медиатека</a>
+                                <ul class="dropdown-menu dropdown_menu_list">
+                                    <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                                    <li><a class="dropdown-item" href="#">Видеогалерея</a></li>
+                                    <li><a class="dropdown-item" href="#">Аудиогалерея</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_list_item dropdown">
+                                <a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown">Алоқа</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="control_icons d-none d-md-flex d-sm-none d-xl-flex d-lg-flex">
+                        <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
+                            <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade top" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" data-backdrop='false'>
+                            <div class="modal-dialog modal-fluid modal-frame modal-top" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel">Шрифт ўлчами:
+                                        <button onclick="myFunction10()"  class="btn btn-outline-primary waves-effect button_size_10px" style="font-size: 10px; padding: 7px 10px; border-radius: 50%;">A</button>
+                                        <button onclick="myFunction14()" class="btn btn-outline-primary waves-effect" style="font-size: 14px; padding: 6px 11px; border-radius: 50%;">A</button>
+                                        <button onclick="myFunction18()" class="btn btn-outline-primary waves-effect" style="font-size: 18px; padding: 6px 12px; border-radius: 50%;">A</button>
+                                        </h5>
+                                        <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel">Ранг схемаси:
+                                            <button onclick="myFunctionfilterWhite()" class="btn btn-outline-primary waves-effect" style="font-size: 12px; padding: 7px 10px; border-radius: 50%;">A</button>
+                                            <button onclick="myFunctionFilterBlack()" class="btn btn-elegant waves-effect" style="font-size: 14px; padding: 8px 11px; border-radius: 50%;">A</button>
+                                            <button onclick="myFunctionFilterBlackGreen()" class="btn btn-outline-success waves-effect" style="font-size: 14px; padding: 7px 10px; border-radius: 50%;">A</button>
+                                        </h5>
+                                        <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel">Расмлар:
+                                            <button class="btn btn-outline-primary waves-effect" style="font-size: 12px; padding: 7px 10px; border-radius: 50%;">
+                                                <i class="fas fa-image"></i>
+                                            </button>
+                                            <button class="btn btn-elegant waves-effect" style="font-size: 14px; padding: 8px 11px; border-radius: 50%;"><i class="fas fa-image"></i></button>
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        
+                        <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
+                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
+                        id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> ўз
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Uz</a>
+                              <a class="dropdown-item" href="#">Рус</a>
+                              <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
+                            <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade top" id="exampleModalPreviewpoisk" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" data-backdrop='false'>
+                            <div class="modal-dialog modal-fluid modal-frame modal-top" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel"></h5>
+                                        <form class="form-inline w-100 d-flex justify-content-center md-form form-sm active-pink-2 mt-2">
+                                            <i class="fas fa-search mr-2" aria-hidden="true"></i>
+                                            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Қидирув" style="font-size: 14px;"
+                                              aria-label="Search">
+                                            <button class="btn btn aqua-gradient btn-rounded btn-sm my-0" type="submit" style="font-size: 12px; border-radius: 25px; ">Қидирув</button>
+                                          </form>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="light-font">   
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb" style="background-color: #190688;">
+                    <li class="breadcrumb-item"><a class="white-text" href="#">Асосий</a></li>
+                    <li class="breadcrumb-item active">Кўнгилли ёрдам</li>
+                  </ol>
+                </nav>
+            </div>
+            <div class="wrapp_main mb-5">
+                <div class="row">
+                    <div class="col-3">
+                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                          aria-controls="v-pills-home" aria-selected="true">Ногиронлиги бўлган шаҳслар</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                          aria-controls="v-pills-profile" aria-selected="false">Якка-ёлғиз кексалар</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                          aria-controls="v-pills-messages" aria-selected="false">Уруш ва меҳнат фаҳрийлари</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                          aria-controls="v-pills-settings" aria-selected="false">Кам таъминлаганлар</a>
+                        <a class="nav-link" id="v-pills-page5-tab" data-toggle="pill" href="#v-pills-page5" role="tab"
+                         aria-controls="v-pills-page5" aria-selected="false">Ижтимоий ҳимойага муҳтож</a>
+                        <a class="nav-link" id="v-pills-page6-tab" data-toggle="pill" href="#v-pills-page6" role="tab"
+                         aria-controls="v-pills-page6" aria-selected="false">Боқувчисини йўқотган</a>
+                        <a class="nav-link" id="v-pills-page7-tab" data-toggle="pill" href="#v-pills-page7" role="tab"
+                         aria-controls="v-pills-page7" aria-selected="false">Кўп фарзандли оила</a>
+                        <a class="nav-link" id="v-pills-page8-tab" data-toggle="pill" href="#v-pills-page8" role="tab"
+                         aria-controls="v-pills-page8" aria-selected="false">Табиий офатдан жабр кўрганлар</a>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                          <h1>Ногиронлиги бўлган шаҳслар</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg" alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                              <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg" alt="section4_img" >
+                              <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                              </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                          <h1>Yakka-yolg'iz keksalar</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                                <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                            </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                          <h1>Urush va mehnat faxriylari</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                          <h1>Kam ta'minlaganlar</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-page5" role="tabpanel" aria-labelledby="v-pills-page5-tab">
+                          <h1>Ijtimoiy himoyaga muhtoj</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                    Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                        <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-page6" role="tabpanel" aria-labelledby="v-pills-page6-tab">
+                          <h1>Boquvchisini yo'qotgan</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-page7" role="tabpanel" aria-labelledby="v-pills-page7-tab">
+                          <h1>Ko'p farzandli oila</h1>
+                          <a href="#">
+                            <div class="section4_item" >
+                              <h2 class="section4_item_title" id="SECTION411">
+                                  Ёшлар <br> Жамғармаси 
+                              </h2>
+                              <br>
+                              <p class="section4_item_paragraph" id="SECTION412">
+                                  Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                              </p>
+                              <br>
+                              <b class="costs" id="SECTION413">
+                                  1000$ - 12000$
+                              </b>
+                              <br><br>
+                              <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                              <div class="skill">
+                                  <div class="skill-bar skill1 wow slideInLeft animated">
+                                      <span class="skill-count1">95%</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                            </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                            <h2 class="section4_item_title" id="SECTION411">
+                                Ёшлар <br> Жамғармаси 
+                            </h2>
+                            <br>
+                            <p class="section4_item_paragraph" id="SECTION412">
+                                Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                            </p>
+                            <br>
+                            <b class="costs" id="SECTION413">
+                                1000$ - 12000$
+                            </b>
+                            <br><br>
+                            <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                            <div class="skill">
+                                <div class="skill-bar skill1 wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                          <h2 class="section4_item_title" id="SECTION411">
+                              Ёшлар <br> Жамғармаси 
+                          </h2>
+                          <br>
+                          <p class="section4_item_paragraph" id="SECTION412">
+                              Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                          </p>
+                          <br>
+                          <b class="costs" id="SECTION413">
+                              1000$ - 12000$
+                          </b>
+                          <br><br>
+                          <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                          <div class="skill">
+                              <div class="skill-bar skill1 wow slideInLeft animated">
+                                  <span class="skill-count1">95%</span>
+                              </div>
+                          </div>
+                          </div>
+                          </a>
+                          <a href="#">
+                            <div class="section4_item" >
+                        <h2 class="section4_item_title" id="SECTION411">
+                            Ёшлар <br> Жамғармаси 
+                        </h2>
+                        <br>
+                        <p class="section4_item_paragraph" id="SECTION412">
+                            Мерос қолдирувчининг меҳнатга қобилиятсиз ёки фарзандликка
+                        </p>
+                        <br>
+                        <b class="costs" id="SECTION413">
+                            1000$ - 12000$
+                        </b>
+                        <br><br>
+                        <img class="section4_img" src="assets/img/Maxalla (2)/victoriano-izquierdo-fnWPcT63z30-unsplash 1.jpg"  alt="section4_img" >
+                        <div class="skill">
+                            <div class="skill-bar skill1 wow slideInLeft animated">
+                                <span class="skill-count1">95%</span>
+                            </div>
+                        </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-page8" role="tabpanel" aria-labelledby="v-pills-page8-tab">
+                          <h1>Tabiiy ofatdan jabr ko'rganlar</h1>
+                          <div class="alert alert-primary" role="alert">
+                            Ma'lumot yo'q !
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
+    <section class="section12">
+        <div class="container">
+            <section class="section11  d-none d-md-none d-sm-none d-xl-flex d-lg-flex">
+            <a class="sitemap_collapse" data-toggle="collapse" href="#collapseExample" role="button"
+             aria-expanded="false" aria-controls="collapseExample" id="SECTION121" style="border-radius: 50px; margin-top: 30px; padding: 10px 10px 10px 35px;">
+             Cайт харитаси</a>
+            </section>
+        <div class="sitemap d-none d-md-none d-sm-none d-xl-flex d-lg-flex ">
+            <div class="collapse row" id="collapseExample">
+                <div class="font_haqida_collapse col-xl-4">
+                    <ul class="fond_haqida_list" id="SECTION122">Фонд ҳақида
+                        <li><a href="#" id="SECTION123">Фонд ҳақида</a></li>
+                        <li><a href="#" id="SECTION124">Раҳбарият</a></li>
+                        <li><a href="#" id="SECTION125">Марказий аппарат</a></li>
+                        <li><a href="#" id="SECTION126">Тузилма</a></li>
+                        <li><a href="#" id="SECTION127">Низом</a></li>
+                        <li><a href="#" id="SECTION128">Ҳудудий фондлар</a></li>
+                        <li><a href="#" id="SECTION129">Тасарруфидаги ташкилотлар</a></li>
+                        <li><a href="#" id="SECTION1210">Алоқа</a></li>
+                    </ul>
+                </div>
+                <div class="matbuot_xizmati_collapse col-xl-4">
+                    <ul class="matbuot_xizmati_list" id="SECTION1211">Матбуот хизмати
+                        <li><a href="#"id="SECTION1212">Эълонлар</a></li>
+                        <li><a href="#"id="SECTION1213">Матбуот хизмати билан боғланиш</a></li>
+                        <li><a href="#"id="SECTION1214">Раҳбариятнинг чиқиш ва баёнотлари</a></li>
+                    </ul>
+                    <ul class="kongilli_yordam_list"id="SECTION1215">Кўнгилли ёрдам
+                        <li><a href="#"id="SECTION1216">Ёрдам бермоқчиман</a></li>
+                        <li><a href="#"id="SECTION1217">Ёрдамга муҳтожман</a></li>
+                        <li><a href="#"id="SECTION1218">Кўрсатилган ёрдам</a></li>
+                        <li><a href="#"id="SECTION1219">Банк реквизитлари</a></li>
+                    </ul>
+                </div>
+                <div class="yangiliklar_collapse col-xl-4">
+                    <ul class="yangiliklar_list"id="SECTION1220">Янгиликлар
+                        <li><a href="#"id="SECTION1221">Фонд янгиликлари</a></li>
+                        <li><a href="#"id="SECTION1222">Ўзбекистон янгиликлари</a></li>
+                        <li><a href="#"id="SECTION1223">Жаҳон янгиликлари</a></li>
+                        <li><a href="#"id="SECTION1224">Саҳоват ва кўмак янгиликлари</a></li>
+                    </ul>
+                    <ul class="mediateka_list"id="SECTION1225">Медиатека
+                        <li><a href="#"id="SECTION1226">Фотогалерея</a></li>
+                        <li><a href="#" id="SECTION1227">Видеогалерея</a></li>
+                        <li><a href="#"id="SECTION1228">Аудиогалерея</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="first_column col-xl-4 col-lg-4 col-md-4">
+                <p id="SECTION1229">The Ministry for Development of Information Technologies and 
+                    Communications of the Republic of Uzbekistan
+                </p>
+                <span id="SECTION1230">&copy;2006-2020 <br> Term of Use</span>
+            </div>
+            <div class="second_column col-xl-4  col-lg-4 col-md-4 d-md-block d-sm-none d-none">
+                <div class="social_media">
+                    <a class="logo_instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="logo_twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="logo_fb" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="logo_yt" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="logo_tg" href="https://t.me/@abdumajid_rashidov"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="name_of_year">
+                    <a href="#"><img src="assets/img/nameOfYear.png" alt=""></a>
+                </div>
+            </div>
+            <div class="third_column col-xl-4  col-lg-4 col-md-4">
+                <p id="SECTION1231">4, Amir Temur Avenue, Tashkent city, 100047 <br>
+                    Phone: (998 71) 238-41-59, Fax: (998 71) 239-87-82 <br>
+                    E-mail: info@mitc.uz <br>
+                    E-xat: mitc@exat.uz <br>
+                    Web-site developer: img_icon
+                </p>
+                <br>
+            </div>
+            <div class="second_column col-xl-4  col-lg-4 col-md-4 col-sm-6 col-6 d-md-none d-sm-block d-lg-none d-block d-xl-none">
+                <div class="social_media">
+                    <a class="logo_instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="logo_twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="logo_fb" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="logo_yt" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="logo_tg" href="https://t.me/@abdumajid_rashidov"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="name_of_year">
+                    <a href="#"><img src="assets/img/nameOfYear.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+        <p class="copywrite" id="SECTION1232">&copy;2020  Барча ҳуқуқлар ҳимояланган</p>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+   
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/button.js" async></script>
+</body>
+</html>

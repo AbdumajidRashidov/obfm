@@ -1,5 +1,5 @@
 .header{
-    background: linear-gradient(180deg, #008EFF 0%, rgba(0, 142, 255, 0.35) 110.48%);
+    background: linear-gradient(180deg, #008EFF 0%, rgba(255, 255, 255, 0.1) 110.48%);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -8,7 +8,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-family: Californian FB;
+        font-family: Playfair display;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
