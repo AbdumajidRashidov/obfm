@@ -24,6 +24,7 @@
     "popper.js": "^1.16.1",
     "pure-css3-animated-border": "^1.0.0",
     "sass": "^1.27.0",
+    "scrollreveal": "^4.0.7",
     "slick-carousel": "^1.8.1",
     "vue": "^2.6.12",
     "wowjs": "^1.1.3"

@@ -220,14 +220,15 @@
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;
                     font-size: 24px;
-                    color: #008EFF;
+                    color: #190688;
                     display: block;
                     transition: 0.3s;
                   }
                   
                   
                   .sidenav a:hover {
-                    color: #014f8f;
+                    color: #FFFFFF;
+                    background-color: #190688;
                   }
                   
                   .sidenav .closebtn {
@@ -236,6 +237,10 @@
                     right: 25px;
                     font-size: 36px;
                     margin-left: 50px;
+                    &:hover{
+                        color: #190688;
+                        background-color: #FFFFFF;
+                    }
                   }
                   
                   @media screen and (max-height: 450px) {

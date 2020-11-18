@@ -405,5 +405,29 @@ $('.single-item-hero').slick({
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-
- 
+  ScrollReveal({ duration: 800 });
+  ScrollReveal().reveal('.header' , {delay:300});
+  ScrollReveal().reveal('.slide_fond_news_item',{delay:400});
+  ScrollReveal().reveal('.y',{delay:400});
+  ScrollReveal().reveal('.section4_slider',{delay:400});
+  ScrollReveal().reveal('.single-item-testimonials',{delay:400});
+  ScrollReveal().reveal('.quote1',{delay:400});
+  ScrollReveal().reveal('.quote2',{delay:400});
+  ScrollReveal().reveal('.section6_head',{delay:400});
+  ScrollReveal().reveal('.y',{delay:400});
+  ScrollReveal().reveal('.section4_slider',{delay:400});
+  ScrollReveal().reveal('.single-item-testimonials',{delay:400});
+  ScrollReveal().reveal('.quote1',{delay:400});
+  ScrollReveal().reveal('.quote2',{delay:400});
+  ScrollReveal().reveal('.section6_head',{delay:400});
+  ScrollReveal().reveal('.section6_left',{delay:400});
+  ScrollReveal().reveal('.section6_right',{delay:400});
+  ScrollReveal().reveal('.mediateka',{delay:400});
+  ScrollReveal().reveal('.mediateka_left',{delay:400});
+  ScrollReveal().reveal('.mediateka_right',{delay:400});
+  ScrollReveal().reveal('.statistika',{delay:400});
+  ScrollReveal().reveal('.Pay',{delay:400});
+  ScrollReveal().reveal('.foydali_havolalar_wrapper',{delay:400});
+  ScrollReveal().reveal('.foydali_havolalar',{delay:400});
+  ScrollReveal().reveal('.section11',{delay:400});
+  ScrollReveal().reveal('.footer',{delay:400});
