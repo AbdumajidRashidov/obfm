@@ -3302,8 +3302,6 @@ a {
   height: 35px;
   padding: 8px 0;
   margin-bottom: 15px;
-  color: #190688;
-  background-color: #FFFFFF;
   -webkit-animation: pulse1 infinite ease;
           animation: pulse1 infinite ease;
   -webkit-animation-duration: 2s;
@@ -3321,14 +3319,23 @@ a {
   0% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #190688;
+    background-color: #FFFFFF;
   }
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
   100% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
   }
 }
 
@@ -3336,60 +3343,92 @@ a {
   0% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #190688;
+    background-color: #FFFFFF;
   }
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
   100% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
   }
 }
 
 .header .header_top .buttons_group_helping .button_help2 {
-  border: 2px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   border-radius: 30px;
   width: 90%;
   height: 35px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  -webkit-animation: pulse infinite ease;
-          animation: pulse infinite ease;
+  -webkit-animation: pulse2 infinite ease;
+          animation: pulse2 infinite ease;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes pulse {
+.header .header_top .buttons_group_helping .button_help2:hover {
+  color: #FFFFFF !important;
+  background-color: #190688 !important;
+}
+
+@-webkit-keyframes pulse2 {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
   50% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
   }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
 }
 
-@keyframes pulse {
+@keyframes pulse2 {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
   50% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    color: #190688;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
   }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
   }
 }
 
