@@ -31,15 +31,9 @@
                                 <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                             </a>
                             <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                            id="dropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> ўз
-                            </a>
-                            <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Uz</a>
-                                <a class="dropdown-item" href="#">Рус</a>
-                                <a class="dropdown-item" href="#">EN</a>
-                            </div>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ўз</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рус</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
                             <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                                 <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                             </a>
@@ -151,9 +145,9 @@
                             <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="yangiliklar.html" data-toggle="dropdown"> янгиликлар</a>
                                 <ul class="dropdown-menu dropdown_menu_list">
                                     <li><a class="dropdown-item" href="yangiliklar.html">Фонд янгиликлари</a></li>
-                                    <li><a class="dropdown-item" href="#">Ўзбекистон янгиликлари</a></li>
-                                    <li><a class="dropdown-item" href="#">Жаҳон янгиликлари</a></li>
-                                    <li><a class="dropdown-item" href="#">“Саховат ва Кўмак” янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="yangiliklar.html">Ўзбекистон янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="yangiliklar.html">Жаҳон янгиликлари</a></li>
+                                    <li><a class="dropdown-item" href="yangiliklar.html">“Саховат ва Кўмак” янгиликлари</a></li>
                                 </ul>
                             </li>
                             <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> медиатека</a>
@@ -169,6 +163,18 @@
                         </ul>
                     </div>
                     <div class="control_icons d-none d-md-flex d-sm-none d-xl-flex d-lg-flex">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn  form-check-label active">
+                              <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
+                              Ўз
+                            </label>
+                            <label class="btn form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Ру
+                            </label>
+                            <label class="btn  form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off">En
+                            </label>
+                        </div>
                         <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
                             <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                         </a>
@@ -201,17 +207,6 @@
                             </div>
                         </div>
                         <!-- Modal -->
-                        
-                        <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                        id="dropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> ўз
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Uz</a>
-                              <a class="dropdown-item" href="#">Рус</a>
-                              <a class="dropdown-item" href="#">EN</a>
-                            </div>
                         <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                             <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                         </a>
@@ -243,69 +238,37 @@
         <div class="containr">
             <div class="hero_slider">
                 <div class="single-item-hero">
-                    <a href="#"><img class="img-fluid" src="assets/img/heroslider.jpg" alt=""></a>
-                    <a href="#"><img class="img-fluid" src="assets/img/heroslider.jpg" alt=""></a>
-                    <a href="#"><img class="img-fluid" src="assets/img/heroslider.jpg" alt=""></a>
+                    <a href="#">
+                        <img class="img-fluid" src="assets/img/uzb.jpg" alt="">    
+                    <div class="single-item-hero-wrap">
+                        <p class="single-item-hero-p">“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
+                            деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.</p>
+                        <small>02.10.2020</small>
+                        <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
+                    </div>
+                    
+                    </a>
+                    <a href="#"><img class="img-fluid" src="assets/img/samalyot.jpg" alt="">
+                        <p>“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
+                            деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.</p>
+                            <small>02.10.2020</small>
+                            <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
+                    </a>
+                    <a href="#"><img class="img-fluid" src="assets/img/samarqand.jpg" alt="">
+                        <p>“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
+                            деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.
+                        </p>
+                            <small>02.10.2020</small>
+                            <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section2" id="sectionblack2">
-        <div class="container">
-                <div class="slide_fond_news">
-                    <div class="single-item">
-                        <div class="slide_fond_news_item">
-                            <h1 id="SECTION21_1" class="fond_news_description  d-sm-flex d-md-none d-xl-none d-lg-none"><i class="fond_news_description_i"></i>Фонд янгиликлари</h1>
-                            <a class="slide_fond_news_img_link" href="#"><img class="slide_fond_news_img"  src="assets/img/monika-kozub-qEO1NR2i3gM-unsplash 1.jpg" alt="slide_fond_news_img"></a>
-                            <div class="wrap_fond_news_description">
-                                <h1 id="SECTION21" class="fond_news_description d-sm-none d-none d-md-none d-lg-flex d-xl-flex"><i class="fond_news_description_i"></i>Фонд янгиликлари</h1>
-                                <p id="SECTION22" class="fond_news_description_p">“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат, деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.
-                                </p>
-                                <a class="button_batafsil_link col-xl-3" href="#" >
-                                    <div class="button_batafsil" id="SECTION23">
-                                        Батафсил
-                                        <img class="button_batafsil_icon" src="assets/img/Arrow 1.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide_fond_news_item">
-                            <h1 id="SECTION21_2" class="fond_news_description  d-sm-flex d-md-none d-xl-none d-lg-none"><i class="fond_news_description_i"></i>Фонд янгиликлари</h1>
-                            <a class="slide_fond_news_img_link" href="#"><img class="slide_fond_news_img"  src="assets/img/monika-kozub-qEO1NR2i3gM-unsplash 1.jpg" alt="slide_fond_news_img"></a>
-                            <div class="wrap_fond_news_description">
-                                <h1 id="SECTION24"><i></i>Фонд янгиликлари</h1>
-                                <p id="SECTION25">“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат, деб ҳисоблаб келдик. Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.
-                                </p>
-                                <a class="button_batafsil_link col-xl-3" href="#" >
-                                    <div class="button_batafsil" id="SECTION26">
-                                        Батафсил
-                                        <img class="button_batafsil_icon" src="assets/img/Arrow 1.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide_fond_news_item">
-                            <h1 id="SECTION21_3" class="fond_news_description d-sm-flex d-md-none d-xl-none d-lg-none"><i class="fond_news_description_i"></i>Фонд янгиликлари</h1>
-                            <a class="slide_fond_news_img_link" href="#"><img class="slide_fond_news_img"  src="assets/img/monika-kozub-qEO1NR2i3gM-unsplash 1.jpg" alt="slide_fond_news_img"></a>
-                            <div class="wrap_fond_news_description">
-                                <h1 id="SECTION27"><i></i>Фонд янгиликлари</h1>
-                                <p id="SECTION28">“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат, деб ҳисоблаб келдик. Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.
-                                </p>
-                                <a class="button_batafsil_link col-xl-3" href="#" >
-                                    <div class="button_batafsil" id="SECTION29">
-                                        Батафсил
-                                        <img class="button_batafsil_icon" src="assets/img/Arrow 1.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
+    
     <section class="section3">
         <div class="yangiliklar">
-            <div class="container">
+            <div class="container p-4">
                 <h1 id="SECTION31">
                     <i class="i_1"></i>
                     Янгиликлар
@@ -402,7 +365,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -423,7 +386,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -444,7 +407,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -464,7 +427,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -485,7 +448,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -506,7 +469,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -528,7 +491,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -549,7 +512,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -570,7 +533,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -590,7 +553,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -611,7 +574,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -632,7 +595,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -654,7 +617,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -675,7 +638,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -696,7 +659,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -716,7 +679,7 @@
                             1000$ - 12000$
                         </b>
                         <br><br>
-                        <img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" >
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -737,7 +700,7 @@
                         </b>
                         <br>
                         <br>
-                        <img class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -758,7 +721,7 @@
                         </b>
                         <br>
                         <br>
-                        <img  class='section4_img' src="assets/img/section4_img1.png" alt="section4_img">
+                        <a href="#"><img class="section4_img" src="assets/img/section4_img1.png" alt="section4_img" ></a>
                         <div class="skill">
                             <div class="skill-bar skill1 wow slideInLeft animated">
                                 <span class="skill-count1">95%</span>
@@ -1078,6 +1041,7 @@
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="node_modules/wowjs/dist/wow.min.js"></script>
     <script src="assets/js/jquery.nav.js"></script>
+    <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>

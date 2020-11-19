@@ -405,12 +405,12 @@ $('.single-item-hero').slick({
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-  ScrollReveal({ duration: 800 });
+  ScrollReveal({ duration: 2000 });
   ScrollReveal().reveal('.header' , {delay:300});
   ScrollReveal().reveal('.slide_fond_news_item',{delay:400});
   ScrollReveal().reveal('.y',{delay:400});
   ScrollReveal().reveal('.section4_slider',{delay:400});
-  ScrollReveal().reveal('.single-item-testimonials',{delay:400});
+  ScrollReveal().reveal('.single-item-testimonials',{delay:300});
   ScrollReveal().reveal('.quote1',{delay:400});
   ScrollReveal().reveal('.quote2',{delay:400});
   ScrollReveal().reveal('.section6_head',{delay:400});
@@ -431,3 +431,4 @@ $('.single-item-hero').slick({
   ScrollReveal().reveal('.foydali_havolalar',{delay:400});
   ScrollReveal().reveal('.section11',{delay:400});
   ScrollReveal().reveal('.footer',{delay:400});
+  ScrollReveal().reveal('.single-item-hero-p',{delay:1000});

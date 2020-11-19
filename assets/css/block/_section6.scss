@@ -24,7 +24,6 @@
         img{
             width: 100%;
             border-radius: 10px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
             position: relative;
             box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
             &:hover{
@@ -54,8 +53,9 @@
                 color: #FFFFFF;
                 top:120px;
                 left: 10px;
-                p{
-                    margin-bottom: 8px;
+                p{  
+                    margin: 0 10px;
+                    margin-bottom: 8px; 
                 }
             }
         }
@@ -81,6 +81,7 @@
                 top:120px;
                 left: 10px;
                 p{
+                    margin: 0 10px;
                     margin-bottom: 8px;
                 }
             }
@@ -110,6 +111,7 @@
                 top:146px;
                 left: 10px;
                 p{
+                    margin: 0 10px;
                     margin-bottom: 16px;
                 }
             }
@@ -135,6 +137,10 @@
             line-height: 24px;
             text-transform: capitalize;
             color: #FFFFFF;
+            margin: 0 10px;
+            p{
+                margin: 0 10px;
+            }
         }
     }
     .button_batafsil_link{

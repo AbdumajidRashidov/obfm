@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    padding-top: 10px;
+    padding: 10px;
     .header_top{
         display: flex;
         justify-content: space-between;
@@ -18,24 +18,25 @@
             justify-content: center;
             align-items: center;
             img{
-                width: 86px;
-                height: 80px;
-                margin-right: 20px;
+                width: 76px;
+                height: 70px;
+                margin-left: 30px;
+                margin-right: 10px;
             }
             .logo_mahalla_title{
-                font-size: 30px;
+                font-size: 26px;
             }
             .logo_xayriya_title{
                 width: max-content;
+                font-size: 26px;
                 margin-right: 20px;
-                font-size: 30px;
             }
         }
         .buttons_group_helping{
             .button_help1{ 
                 border:1px solid #190688;
                 border-radius: 30px;
-                width: 90%;
+                width: 80%;
                 height: 35px;
                 padding: 8px 0;
                 margin-bottom: 15px;                
@@ -48,9 +49,9 @@
                 }
                 @keyframes pulse1 {
                     0% {
-                      -webkit-transform: scale(1.2);
-                      -ms-transform: scale(1.2);
-                      transform: scale(1.2);
+                      -webkit-transform: scale(1.05);
+                      -ms-transform: scale(1.05);
+                      transform: scale(1.05);
                       color: #190688;
                       border-color: #190688;
                       background-color: #FFFFFF;
@@ -66,9 +67,9 @@
                     }
                   
                     100% {
-                      -webkit-transform: scale(1.2);
-                      -ms-transform: scale(1.2);
-                      transform: scale(1.2);
+                      -webkit-transform: scale(1.05);
+                      -ms-transform: scale(1.05);
+                      transform: scale(1.05);
                       color: #190688;
                       border-color: #FFFFFF;
                       background-color: #FFFFFF;
@@ -78,7 +79,7 @@
             .button_help2{ 
                 border:1px solid #FFFFFF;
                 border-radius: 30px;
-                width: 90%;
+                width: 80%;
                 height: 35px;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -101,9 +102,9 @@
                     }
                   
                     50% {
-                      -webkit-transform: scale(1.2);
-                      -ms-transform: scale(1.2);
-                      transform: scale(1.2);
+                      -webkit-transform: scale(1.05);
+                      -ms-transform: scale(1.05);
+                      transform: scale(1.05);
                       color: #190688;
                       border-color: #FFFFFF;
                       background-color: #FFFFFF;
@@ -125,7 +126,7 @@
         display: flex;
         .navbarr{
             display: flex;
-            margin-right: 20px;
+            margin-left: 20px;
             .navbar_list{
                 display: flex;
                 justify-content:space-between;
@@ -181,7 +182,7 @@
                     height: 35px;
                 }
             }
-             .voice_icon_img_link, .poisk_icon_img_link{
+             .poisk_icon_img_link{
                 display: inline;
                 margin: 0 15px;
                 img{
@@ -189,16 +190,21 @@
                     height: 25px;
                 }
             }
-            .dropdown-toggle{
+            .form-check-label{
                 padding: 7px;
-                border-radius: 50%;
-                border: #FFFFFF 1px solid;
+                margin: 5px 10px 0 0;
+                border-radius: 50% !important; 
                 font-family: Playfair Display;
                 font-style: normal;
                 font-size: 14px;
                 line-height: 16px;
                 color: #FFFFFF;
+                text-transform: uppercase;
+                background-color: unset !important;
+            }
+            .active{
                 background-color: #190688 !important;
+                box-shadow: 0px 0px 10px 2px #190688;
             }
         }
     }
