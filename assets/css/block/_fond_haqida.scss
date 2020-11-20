@@ -1,0 +1,60 @@
+.tab-pane{
+    p{
+        color: #190688;
+        font-family: Playfair display;
+        font-size: 20px;
+    }
+    h2{
+        color: #190688;
+        margin: 10px 0;
+        font-family: Playfair display;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .fond-card{
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+        margin-bottom: 40px;
+        padding: 10px;
+        display: flex;
+        &:hover{
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease-in-out;
+        }
+        .fond-card-content{
+            .nav{
+                .nav-item{
+                    .nav-link{
+                        color: #190688;
+                        font-family:Playfair display ;
+                    }
+                }
+            }
+        }
+    }
+    .card-groupes{
+        .card{
+            &:hover{
+                box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease-in-out;
+            }
+            .card-body{
+                padding: 10px;
+                .card-title{
+                    font-size: 18px;
+                    color: #190688;
+                    font-family:Playfair display ;
+                }
+                p{
+                    color: #190688;
+                    font-family:Playfair display ;
+                    font-size: 14px;  
+                }
+                button{
+                    background-color: #190688 !important;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

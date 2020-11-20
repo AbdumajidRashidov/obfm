@@ -2762,7 +2762,7 @@ a {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 60px;
   text-transform: capitalize;
   color: #190688;
@@ -3946,5 +3946,70 @@ a {
 
 .news .tab-pane .new img {
   width: 100%;
+}
+
+.tab-pane p {
+  color: #190688;
+  font-family: Playfair display;
+  font-size: 20px;
+}
+
+.tab-pane h2 {
+  color: #190688;
+  margin: 10px 0;
+  font-family: Playfair display;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tab-pane .fond-card {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-pane .fond-card:hover {
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-pane .fond-card .fond-card-content .nav .nav-item .nav-link {
+  color: #190688;
+  font-family: Playfair display;
+}
+
+.tab-pane .card-groupes .card:hover {
+  -webkit-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-pane .card-groupes .card .card-body {
+  padding: 10px;
+}
+
+.tab-pane .card-groupes .card .card-body .card-title {
+  font-size: 18px;
+  color: #190688;
+  font-family: Playfair display;
+}
+
+.tab-pane .card-groupes .card .card-body p {
+  color: #190688;
+  font-family: Playfair display;
+  font-size: 14px;
+}
+
+.tab-pane .card-groupes .card .card-body button {
+  background-color: #190688 !important;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

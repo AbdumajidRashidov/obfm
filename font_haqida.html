@@ -20,7 +20,7 @@
     <script src="node_modules/fontawesome-free-5.15.1-web/js/all.js"></script>
 </head>
 <body>
-    <header class="header" style=" background-color: #190688;">
+    <header class="header" style="background-color: #190688;">
         <div class="container">
             <div class="row">
                 <div class="header_top">
@@ -30,15 +30,9 @@
                                 <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                             </a>
                             <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                            id="dropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> Ўз
-                            </a>
-                            <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Uz</a>
-                                <a class="dropdown-item" href="#">Рус</a>
-                                <a class="dropdown-item" href="#">EN</a>
-                            </div>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ўз</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рус</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
                             <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                                 <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                             </a>
@@ -76,7 +70,7 @@
                                         <a href="#" class="w3-button w3-block w3-left-align">Матбуот хизмати билан боғланиш</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Раҳбариятнинг чиқиш ва баёнотлари</a>
                                     </div>
-                                <a data-toggle="collapse" href="#collapse_nav3" role="button" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
+                                <a data-toggle="collapse" href="kongilli_yordam.html" role="link" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
                                     <div id="collapse_nav3" class="collapse mobile_nav_link">
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдам бермоқчиман</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдамга муҳтожман</a>
@@ -102,11 +96,11 @@
                     </div>
                     <div class="logos d-flex">
                         <div class="logo_mahalla">
-                            <a href="homepage.html"><img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla"></a>
+                            <a href="homepage.html"> <img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla"></a>
                             <h2 class="logo_mahalla_title">“Маҳалла” ҳайрия жамоат фонди</h2>
                         </div>
                         <div class="logo_xayriya">
-                            <a href="homepage.html"><img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya"></a>
+                            <img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya">
                             <h2 class="logo_xayriya_title">“Саховат ва Кўмак” </h2>
                         </div>
                     </div>
@@ -120,7 +114,8 @@
                 <div class="header_bottom">
                     <div class="navbarr">
                         <ul class="navbar_list">
-                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> Фонд ҳакида</a>
+                            <li class="navbar_list_item dropdown">
+                                <a class="navbar_list_item_link dropdown-toggle ui-box bottom-leftToRight" href="#" data-toggle="dropdown">Фонд ҳакида</a>
                                 <ul class="dropdown-menu dropdown_menu_list">
                                     <li><a class="dropdown-item" href="#">Фонд ҳакида</a></li>
                                     <li><a class="dropdown-item" href="#">Раҳбарият</a></li>
@@ -167,6 +162,18 @@
                         </ul>
                     </div>
                     <div class="control_icons d-none d-md-flex d-sm-none d-xl-flex d-lg-flex">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn  form-check-label active">
+                              <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked >
+                              Ўз
+                            </label>
+                            <label class="btn form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Ру
+                            </label>
+                            <label class="btn  form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off">En
+                            </label>
+                        </div>
                         <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
                             <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                         </a>
@@ -199,17 +206,6 @@
                             </div>
                         </div>
                         <!-- Modal -->
-                        
-                        <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                        id="dropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> ўз
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Uz</a>
-                              <a class="dropdown-item" href="#">Рус</a>
-                              <a class="dropdown-item" href="#">EN</a>
-                            </div>
                         <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                             <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                         </a>
@@ -238,137 +234,670 @@
             </div>
     </header>
     <main>
-        <div class="fond">
-            <div class="light-font">   
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb primary-color">
-                        <li class="breadcrumb-item"><a class="white-text" href="#">Асосий</a></li>
-                        <li class="breadcrumb-item active">Фонд ҳақида</li>
-                    </ol>
-                </nav>
-        </div>
-        <div class="row">
-            <div class="col-3">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style='background-color: rgb(202, 238, 238);   border-radius: 7px;'>
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-fond1" role="tab"
-                  aria-controls="v-pills-home" aria-selected="true">Фонд ҳақида</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-fond2" role="tab"
-                  aria-controls="v-pills-profile" aria-selected="false">Раҳбарият</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-fond3" role="tab"
-                  aria-controls="v-pills-messages" aria-selected="false">Ҳудудий фондлар</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-fond4" role="tab"
-                  aria-controls="v-pills-settings" aria-selected="false">Тасарруфидаги ташкилотлар</a>
-                <a class="nav-link" id="v-pills-page5-tab" data-toggle="pill" href="#v-pills-fond5" role="tab"
-                 aria-controls="v-pills-page5" aria-selected="false">Банк реквизитлар</a>
-                <a class="nav-link" id="v-pills-page6-tab" data-toggle="pill" href="#v-pills-fond6" role="tab"
-                 aria-controls="v-pills-page6" aria-selected="false">Ташкилий тузилма</a>
-                 <a class="nav-link" id="v-pills-page7-tab" data-toggle="pill" href="#v-pills-fond7" role="tab"
-                 aria-controls="v-pills-page7" aria-selected="false">Устав</a>
-              </div>
+        <div class="container">
+            <div class="fond">
+                <div class="light-font">   
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb" style="background-color: #190688;">
+                            <li class="breadcrumb-item"><a class="white-text" href="#">Асосий</a></li>
+                            <li class="breadcrumb-item active">Фонд ҳақида</li>
+                        </ol>
+                    </nav>
             </div>
-            <div class="col-9">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-fond1" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  <h1>Мақсади</h1>
-                  <h2>Мақсад ва вазифалари</h2>
-                  <p>
-                    Фондининг асосий мақсади фуқаролар йиғинлари фаолиятини аниқ йўналтирилган асосларда ва аҳолини ижтимоий ҳимояга муҳтож қатламини қўллаб-қувватлаш, кўмаклашишдан иборат.
-                    <br><br>
-                    Фонд қуйидаги вазифаларни амалга оширади:
-                    <br><br>
-                    – фуқаролар йиғинларига аҳоли орасида инсонпарварлик ва меҳр-оқибат асосида яхши қўшничилик ва ўзаро ҳурмат муносабатларини шакллантириш, ҳудудларини ижтимоий, сиёсий барқарорлик, тинчлик ва осойишталикни таъминлашда ҳамкорлик қилиш, ёрдамлар кўрсатиш ҳамда аҳолининг яшаш шароитларини яхшилаш ва қулай шарт-шароитлар яратиш, тартибга келтириш ишларида иштирок этиш ҳамда молиявий кўмаклашиш;
-                    <br><br>
-                    – давлат ҳокимияти органлари ваколатларини фуқароларнинг ўзини ўзи бошқариш органларига босқичма-босқич ўтказилиши жараёнида ҳамда фуқаролар йиғинлари томонидан ушбу ваколатларнинг амалга оширилишида зарур услубий тавсиялар ишлаб чиқишда фаол иштирок этиш;
-                    <br><br>
-                    − фонднинг бўлим, бўлинмалари ўзларининг тегишли ҳудудидаги фуқаролар йиғинлари фаолияти билан боғлиқ харажатларни, ходимларини бир йилда бир марта тўланадиган лавозим маоши миқдоридаги моддий ёрдам кўрсатиш ва бошқа харажатларини молиялаштириш;
-                    <br><br>
-                    – фуқаролар йиғинлари фаолиятини ўрганиш, таҳлил қилиш, илғoр тажрибаларни оммалаштириш, улар манфаатларини қонун асосида ҳимоя қилиш, улар томонидан ишлаб чиқилган истиқболли ғоялар ва лойиҳаларни амалга оширишда иштирок этиш, зарур ҳолларда уларни молиявий томонлама қўллаб-қувватлаш;
-                    <br><br>
-                    – фуқаролар йиғинида кам таъминланган, ижтимоий ҳимояга мухтож, боқувчисини йўқотган оилалар, ёлғиз кексалар, фахрийлар, ногиронлар, етим-есирларга ҳамда таббий офатлардан талофат кўрган фуқароларга нисбатан инсонпарвар ва меҳр-шафқатли муносабатда бўлиш ғояларини кенг тарғиб қилиш уларни моддий ва маънавий қўллаб-қувватлаш ҳамда ночор қийналган оилаларни уй-жой билан таъминлашда, мавжуд уйларини таъмирлаш ҳамда хорижий давлатларда даволанишларида фонд имкониятларидан келиб чиқиб моддий ёрдамлар кўрсатиш;
-                    <br><br>
-                    − фуқаролар йиғинлари фаолиятини илғoр тажрибалар билан оммалаштириш, улар томонидан ишлаб чиқилган истиқболли ғоя ва лойиҳаларни амалга оширишда иштирок этиш, зарур ҳолларда уларни молиявий қўллаб-қувватлаш ҳамда уларни моддий-техника базасини мустаҳкамлашда тасарруфидаги биноларини реконструкция қилиш, таъмирлаш, қуриш ҳамда бино билан таъминлашда молиявий томондан кўмаклашиш;
-                    <br><br>
-                    – фуқароларнинг ўзини ўзи бошқариш органлари фаолиятининг долзарб масалалари, давлат органлари, ҳўжалик бошқарувлари, нодавлат ва нотижорат ташкилотлари билан ижтимоий шериклик механизмларини шакллантириш, ривожлантиришга бағишланган республика ва халқаро илмий-амалий анжуманлар, семинарлар ташкил этиш ва иштирок этиш;
-                    <br><br>
-                    туман (шаҳар)ларда ижтимоий-иқтисодий ҳолатларни яхшилаш, аҳолини тоза ичимлик суви билан таъминлаш, маҳаллалардаги ички йўллар, кўп қаватли уй-жойларни таъмирлашда ёрдамлар кўрсатиш;
-                    <br><br>
-                    умумдавлат аҳамиятига эга бўлган ҳолларда хорижий корхоналар билан тўғридан-тўғри шартномалар асосида қурилиш, тиббий жиҳозлар ва бошқа зарурий товарларни харид қилиш ҳамда ижтимоий-иқтисодий соҳага оид тадбирларни қўллаб-қувватлаш ва иштирок этиш;
-                    <br><br>
-                    – давлатимизда ижтимоий-иқтисодий соҳаларни ривожлантириш, илғор технологияларни жорий этиш, маънавий-маданий тадбирлар, марказий экспозицион кўргазмаларни ташкил этишда молиявий қўллаб-қувватлаш, туризм соҳасини ривожлантиришга қартилган чора-тадбирларни амалга ошириш;
-                    <br><br>
-                    − эпидемия ва пандемияга қарши курашиш уни олдини олиш аҳолига кўрсатилаётган тиббий хизматлар ва ёрдамлар сифатини янада яхшилаш, самарадорлигини ошириш, фуқароларнинг ижтимоий муҳофаза қилиш, саломатлигини мустаҳкамлаш уларни қўллаб-қувватлаш;
-                    <br><br>
-                     – фонднинг Устав фаолияти доирасида республикадаги бошқа нодавлат нотижорат ташкилотлар, халқаро, чет эл юридик ва жисмоний шахслар билан ҳамкорликда қўшма дастур ва стартоп бизнес лойиҳаларни ижтимоий шериклик асосида амалга ошириш, илм-фан ҳамда ишлаб чиқариш соҳаларини қўллаб-қувватлашда иштирок этиш.
-                  </p>
-                  <button class="btn blue-gradient mb-4">Dowload PDF</button>
-                
+            <div class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills mb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-fond1" role="tab"
+                      aria-controls="v-pills-home" aria-selected="true">Фонд ҳақида</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-fond2" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">Раҳбарият</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-fond3" role="tab"
+                      aria-controls="v-pills-messages" aria-selected="false">Ҳудудий фондлар</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-fond4" role="tab"
+                      aria-controls="v-pills-settings" aria-selected="false">Тасарруфидаги ташкилотлар</a>
+                    <a class="nav-link" id="v-pills-page5-tab" data-toggle="pill" href="#v-pills-fond5" role="tab"
+                     aria-controls="v-pills-page5" aria-selected="false">Банк реквизитлар</a>
+                    <a class="nav-link" id="v-pills-page6-tab" data-toggle="pill" href="#v-pills-fond6" role="tab"
+                     aria-controls="v-pills-page6" aria-selected="false">Ташкилий тузилма</a>
+                     <a class="nav-link" id="v-pills-page7-tab" data-toggle="pill" href="#v-pills-fond7" role="tab"
+                     aria-controls="v-pills-page7" aria-selected="false">Устав</a>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-fond2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  <h1>Раҳбарият</h1>
-                  <div class="fond-card">
-                      <div class="fond-card-img">
-                          <img src="img/usmanov.jpg" alt="usmanov-img">
-                      </div>
-                      <div class="fond-card-content">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                aria-selected="true">Раҳбарият</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                aria-selected="false">Биография</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                                aria-selected="false">Лавозим мажбуриятлари</a>
-                            </li>
-                          </ul>
-                          <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h2>
-                                    "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
-                                </h2>
-                                <p>
-                                    Раҳбар : Усманов Дилшодбек Абдуманнонович <br>
-                                    Қабул : 10.00-12.00 <br>
-                                    Телефон : +998 71 232 17 56 <br>
-                                    Email : hayriya@mahalla.uz
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Биография</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Лавозим мажбуриятлари</div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-fond1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <h1>Мақсад ва вазифалари</h1>
+                      <p>
+                        Фондининг асосий мақсади фуқаролар йиғинлари фаолиятини аниқ йўналтирилган асосларда ва аҳолини ижтимоий ҳимояга муҳтож қатламини қўллаб-қувватлаш, кўмаклашишдан иборат.
+                        <br><br>
+                        Фонд қуйидаги вазифаларни амалга оширади:
+                        <br><br>
+                        – фуқаролар йиғинларига аҳоли орасида инсонпарварлик ва меҳр-оқибат асосида яхши қўшничилик ва ўзаро ҳурмат муносабатларини шакллантириш, ҳудудларини ижтимоий, сиёсий барқарорлик, тинчлик ва осойишталикни таъминлашда ҳамкорлик қилиш, ёрдамлар кўрсатиш ҳамда аҳолининг яшаш шароитларини яхшилаш ва қулай шарт-шароитлар яратиш, тартибга келтириш ишларида иштирок этиш ҳамда молиявий кўмаклашиш;
+                        <br><br>
+                        – давлат ҳокимияти органлари ваколатларини фуқароларнинг ўзини ўзи бошқариш органларига босқичма-босқич ўтказилиши жараёнида ҳамда фуқаролар йиғинлари томонидан ушбу ваколатларнинг амалга оширилишида зарур услубий тавсиялар ишлаб чиқишда фаол иштирок этиш;
+                        <br><br>
+                        − фонднинг бўлим, бўлинмалари ўзларининг тегишли ҳудудидаги фуқаролар йиғинлари фаолияти билан боғлиқ харажатларни, ходимларини бир йилда бир марта тўланадиган лавозим маоши миқдоридаги моддий ёрдам кўрсатиш ва бошқа харажатларини молиялаштириш;
+                        <br><br>
+                        – фуқаролар йиғинлари фаолиятини ўрганиш, таҳлил қилиш, илғoр тажрибаларни оммалаштириш, улар манфаатларини қонун асосида ҳимоя қилиш, улар томонидан ишлаб чиқилган истиқболли ғоялар ва лойиҳаларни амалга оширишда иштирок этиш, зарур ҳолларда уларни молиявий томонлама қўллаб-қувватлаш;
+                        <br><br>
+                        – фуқаролар йиғинида кам таъминланган, ижтимоий ҳимояга мухтож, боқувчисини йўқотган оилалар, ёлғиз кексалар, фахрийлар, ногиронлар, етим-есирларга ҳамда таббий офатлардан талофат кўрган фуқароларга нисбатан инсонпарвар ва меҳр-шафқатли муносабатда бўлиш ғояларини кенг тарғиб қилиш уларни моддий ва маънавий қўллаб-қувватлаш ҳамда ночор қийналган оилаларни уй-жой билан таъминлашда, мавжуд уйларини таъмирлаш ҳамда хорижий давлатларда даволанишларида фонд имкониятларидан келиб чиқиб моддий ёрдамлар кўрсатиш;
+                        <br><br>
+                        − фуқаролар йиғинлари фаолиятини илғoр тажрибалар билан оммалаштириш, улар томонидан ишлаб чиқилган истиқболли ғоя ва лойиҳаларни амалга оширишда иштирок этиш, зарур ҳолларда уларни молиявий қўллаб-қувватлаш ҳамда уларни моддий-техника базасини мустаҳкамлашда тасарруфидаги биноларини реконструкция қилиш, таъмирлаш, қуриш ҳамда бино билан таъминлашда молиявий томондан кўмаклашиш;
+                        <br><br>
+                        – фуқароларнинг ўзини ўзи бошқариш органлари фаолиятининг долзарб масалалари, давлат органлари, ҳўжалик бошқарувлари, нодавлат ва нотижорат ташкилотлари билан ижтимоий шериклик механизмларини шакллантириш, ривожлантиришга бағишланган республика ва халқаро илмий-амалий анжуманлар, семинарлар ташкил этиш ва иштирок этиш;
+                        <br><br>
+                        туман (шаҳар)ларда ижтимоий-иқтисодий ҳолатларни яхшилаш, аҳолини тоза ичимлик суви билан таъминлаш, маҳаллалардаги ички йўллар, кўп қаватли уй-жойларни таъмирлашда ёрдамлар кўрсатиш;
+                        <br><br>
+                        умумдавлат аҳамиятига эга бўлган ҳолларда хорижий корхоналар билан тўғридан-тўғри шартномалар асосида қурилиш, тиббий жиҳозлар ва бошқа зарурий товарларни харид қилиш ҳамда ижтимоий-иқтисодий соҳага оид тадбирларни қўллаб-қувватлаш ва иштирок этиш;
+                        <br><br>
+                        – давлатимизда ижтимоий-иқтисодий соҳаларни ривожлантириш, илғор технологияларни жорий этиш, маънавий-маданий тадбирлар, марказий экспозицион кўргазмаларни ташкил этишда молиявий қўллаб-қувватлаш, туризм соҳасини ривожлантиришга қартилган чора-тадбирларни амалга ошириш;
+                        <br><br>
+                        − эпидемия ва пандемияга қарши курашиш уни олдини олиш аҳолига кўрсатилаётган тиббий хизматлар ва ёрдамлар сифатини янада яхшилаш, самарадорлигини ошириш, фуқароларнинг ижтимоий муҳофаза қилиш, саломатлигини мустаҳкамлаш уларни қўллаб-қувватлаш;
+                        <br><br>
+                         – фонднинг Устав фаолияти доирасида республикадаги бошқа нодавлат нотижорат ташкилотлар, халқаро, чет эл юридик ва жисмоний шахслар билан ҳамкорликда қўшма дастур ва стартоп бизнес лойиҳаларни ижтимоий шериклик асосида амалга ошириш, илм-фан ҳамда ишлаб чиқариш соҳаларини қўллаб-қувватлашда иштирок этиш.
+                      </p>
+                      <button class="btn blue-gradient mb-4">Dowload PDF</button>
+                    
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fond2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                      <h1>Раҳбарият</h1>
+                      <div class="fond-card" style="display: flex;">
+                          <div class="fond-card-img mr-4">
+                              <img src="./assets/img/usmanov.jpg" alt="usmanov-img" width="200px" height="250px">
+                          </div>
+                          <div class="fond-card-content">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                    aria-selected="true">Раҳбарият</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                    aria-selected="false">Биография</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                    aria-selected="false">Лавозим мажбуриятлари</a>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h2>
+                                        "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
+                                    </h2>
+                                    <p>
+                                        Раҳбар : Усманов Дилшодбек Абдуманнонович <br>
+                                        Қабул : 10.00-12.00 <br>
+                                        Телефон : +998 71 232 17 56 <br>
+                                        Email : hayriya@mahalla.uz
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p>
+                                        Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                        pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p>
+                                        Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                        pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                    </p>
+                                </div>
+                              </div>
                           </div>
                       </div>
+                      <div class="fond-card" style="display: flex;">
+                        <div class="fond-card-img mr-4">
+                            <img src="./assets/img/usmanov.jpg" alt="usmanov-img" width="200px" height="250px">
+                        </div>
+                        <div class="fond-card-content">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                  aria-selected="true">Раҳбарият</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                  aria-selected="false">Биография</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                  aria-selected="false">Лавозим мажбуриятлари</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                  <h2>
+                                      "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
+                                  </h2>
+                                  <p>
+                                      Раҳбар : Усманов Дилшодбек Абдуманнонович <br>
+                                      Қабул : 10.00-12.00 <br>
+                                      Телефон : +998 71 232 17 56 <br>
+                                      Email : hayriya@mahalla.uz
+                                  </p>
+                              </div>
+                              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                  <p>
+                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                  </p>
+                              </div>
+                              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                  <p>
+                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                  </p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="fond-card" style="display: flex;">
+                        <div class="fond-card-img mr-4">
+                            <img src="./assets/img/usmanov.jpg" alt="usmanov-img" width="200px" height="250px">
+                        </div>
+                        <div class="fond-card-content">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                  aria-selected="true">Раҳбарият</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                  aria-selected="false">Биография</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                  aria-selected="false">Лавозим мажбуриятлари</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                  <h2>
+                                      "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
+                                  </h2>
+                                  <p>
+                                      Раҳбар : Усманов Дилшодбек Абдуманнонович <br>
+                                      Қабул : 10.00-12.00 <br>
+                                      Телефон : +998 71 232 17 56 <br>
+                                      Email : hayriya@mahalla.uz
+                                  </p>
+                              </div>
+                              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                  <p>
+                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                  </p>
+                              </div>
+                              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                  <p>
+                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
+                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
+                                  </p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fond3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                      <h1>Ҳудудий фондлар</h1>
+                      <!-- Card group -->
+                        <div class="card-groupes row">
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3" style="width: 30%;">
+                            <!-- Card image -->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="assets/img/qoraqalpogiston.jpg"
+                                alt="Card image cap">
+                                <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title">Қорақалпоғистон Республикаси</h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                <button type="button" class="btn  btn-md">Read more</button>
+                            </div>
+                            <!-- Card content -->
+                            </div>
+                            <!-- Card -->
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3 " style="width: 30%;">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/andijon.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Андижон вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                            </div>
+                            <!-- Card -->
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3" style="width: 30%;">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/buxoro.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Бухоро вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3 " style="width: 30%;">
+                        
+                            <!-- Card image -->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="assets/img/jizzax.jpg"
+                                alt="Card image cap">
+                                <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                        
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title">Жиззах вилояти</h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                <button type="button" class="btn btn-primary btn-md">Read more</button>
+                        
+                            </div>
+                            <!-- Card content -->
+                        
+                            </div>
+                            <!-- Card -->
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3 " style="width: 30%;">
+                            <!-- Card image -->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="assets/img/navoiy.jpg"
+                                alt="Card image cap">
+                                <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title">Навоий вилояти</h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                <button type="button" class="btn btn-primary btn-md">Read more</button>
+                            </div>
+                            <!-- Card content -->
+                            </div>
+                            <!-- Card -->
+                            <!-- Card -->
+                            <div class="card mb-4 mr-3" style="width: 30%;">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/namangan.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Наманган вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3 " style="width: 30%;">
+                                    <!-- Card image -->
+                                    <div class="view overlay">
+                                        <img class="card-img-top" src="assets/img/samarqand (1).jpg"
+                                        alt="Card image cap">
+                                        <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Card content -->
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <h4 class="card-title">Самарқанд вилояти</h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    </div>
+                                    <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3" style="width: 30%;">
+                                    <!-- Card image -->
+                                    <div class="view overlay">
+                                        <img class="card-img-top" src="assets/img/sirdaryo.jpg"
+                                        alt="Card image cap">
+                                        <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Card content -->
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <h4 class="card-title">Сирдарё вилояти</h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    </div>
+                                    <!-- Card content -->
+                                    </div>
+                                    <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3 " style="width: 30%;">
+                            
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/surxondaryo.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Сурхондарё вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                            
+                                </div>
+                                <!-- Card content -->
+                            
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3 " style="width: 30%;">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/toshkentviloyati.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Тошкент вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                            <div class="card mb-4 mr-3" style="width: 30%;">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/xorazm.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Хоразм вилояти</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3 " style="width: 30%;">
+                                    <!-- Card image -->
+                                    <div class="view overlay">
+                                        <img class="card-img-top" src="assets/img/fargona.jpg"
+                                        alt="Card image cap">
+                                        <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Card content -->
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <h4 class="card-title">Фарғона вилояти</h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    </div>
+                                    <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3" style="width: 30%;">
+                                    <!-- Card image -->
+                                    <div class="view overlay">
+                                        <img class="card-img-top" src="assets/img/qashqadaryo.jpg"
+                                        alt="Card image cap">
+                                        <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Card content -->
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <h4 class="card-title">Қашқадарё вилояти</h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    </div>
+                                    <!-- Card content -->
+                                    </div>
+                                    <!-- Card -->
+                                <!-- Card -->
+                                <div class="card mb-4 mr-3 " style="width: 30%;">
+                            
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="assets/img/toshkent.jpg"
+                                    alt="Card image cap">
+                                    <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            
+                                <!-- Card content -->
+                                <div class="card-body">
+                                    <!-- Title -->
+                                    <h4 class="card-title">Тошкент шаҳар</h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                </div>
+                                <!-- Card content -->
+                                </div>
+                                <!-- Card -->
+                        </div>
+                    <!-- Card group -->
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fond4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <h1>Тасарруфидаги ташкилотлар</h1>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fond5" role="tabpanel" aria-labelledby="v-pills-page5-tab">
+                      <h1>Банк реквизитлар</h1>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-fond6" role="tabpanel" aria-labelledby="v-pills-page6-tab">
+                        <h1>Ташкилий тузилма</h1>
+                      </div>
+                    <div class="tab-pane fade" id="v-pills-fond7" role="tabpanel" aria-labelledby="v-pills-page7-tab">
+                      <h1>Устав</h1>
+                      <div class="alert alert-primary" role="alert">
+                        Ma'lumot yo'q !
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-fond3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                  <h1>Ҳудудий фондлар</h1>
-                  <div class=""></div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-fond4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                  <h1>Тасарруфидаги ташкилотлар</h1>
-                  
-                </div>
-                <div class="tab-pane fade" id="v-pills-fond5" role="tabpanel" aria-labelledby="v-pills-page5-tab">
-                  <h1>Банк реквизитлар</h1>
-                  
-                </div>
-                <div class="tab-pane fade" id="v-pills-fond6" role="tabpanel" aria-labelledby="v-pills-page6-tab">
-                    <h1>Ташкилий тузилма</h1>
-                    
-                  </div>
-                <div class="tab-pane fade" id="v-pills-fond7" role="tabpanel" aria-labelledby="v-pills-page7-tab">
-                  <h1>Устав</h1>
-                  <div class="alert alert-primary" role="alert">
-                    Ma'lumot yo'q !
-                  </div>
-                </div>
-              </div>
             </div>
+            </div>
+            <section class="section9">
+                <div class="container">
+                    <div class="Pay">
+                        <h1 id="SECTION91">
+                            <i class="section9_i"></i>
+                            Тўлов усуллари 
+                            <i class="section9_i"></i>
+                        </h1>
+                        <div class="payment_type">
+                            <a href="#"  data-toggle="modal" data-target="#centralModalInfo" ><img class="img_payme" src="assets/img/payme.svg" alt="payme_img"></a>
+                            <!--modals-->
+                            <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-notify modal-info" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Header-->
+                                                <div class="modal-header">
+                                                    <p class="heading lead" >Оферта шартлари</p>
+        
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                                    </button>
+                                                </div>
+        
+                                            <!--Body-->
+                                            <div class="modal-body">
+                                                <div class="text-center">
+                                                <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi assumenda sit fuga, dolore non commodi reiciendis. 
+                                                    Perspiciatis totam aut ipsam beatae? Unde, facere? Repellendus quos delectus quisquam illum at. Lorem ipsum dolor sit amet, 
+                                                    consectetur adipisicing elit.Quasi, eligendi. Quo quidem minus mollitia odio placeat dicta officiis repellendus repellat dolores quos!
+                                                    In placeat labore dolor, repellendus doloremque repudiandae saepe.Lorem ipsum dolor sit ametconsectetur adipisicing elit. 
+                                                Iusto blanditiis repudiandae aspernatur soluta culpa veritatis doloribus magni,
+                                                    possimus corporis voluptates maxime laudantium sint ab dolores necessitatibus libero sapiente. Provident, architecto.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati voluptatum quaerat! Temporibus mollitia laboriosam, ex harum 
+                                                    provident porro aliquam eius sunt, obcaecati consectetur rem optio, at eveniet incidunt. Accusantium harum recusandae ipsum illum totam 
+                                                    explicabo minima optio magni aliquid doloremque aut facilis quam, neque aperiam nisi maxime mollitia cupiditate. Qui perspiciatis quos vel
+                                                    s aperiam minima est sint nemo? Possimus numquam accusamus eius voluptatibus, repellat vitae ab, quos atque adipisci veritatis ducimus! 
+                                                    Praesentium reiciendis pariatur aut quae perspiciatis omnis architecto, dolores corporis nihil numquam vel natus distinctio, ipsum iure eius
+                                                     autem adipisci maiores non facilis nobis! Provident aliquid dolor et odio, illo hic ipsa modi quidem sit fugiat maxime pariatur neque laboriosa
+                                                     eiciendis repudiandae quia eum corrupti id, ducimus voluptatibus recusandae omnis eveniet tempora. Amet, harum minus voluptatibus magnam quod 
+                                                 nobis at fuga? Deserunt natus voluptatibus cupiditate iste illo corporis quam odio tenetur aperiam alias, totam provident, aspernatur esse molestias quaerat pariatur corrupti 
+                                                    Iste omnis cumque non aut corrupti numquam veniam, quia maiores libero distinctio eligendi nesciunt quisquam fugiat iusto unde ipsam.
+                                                </p>
+                                                </div>
+                                                <div class="oferta">
+                                                    <button class="button" id="button">
+                                                        Оферта шартларига розиман!
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <a href="#" data-toggle="modal" data-target="#centralModalInfo"><img class="img_click" src="assets/img/click.svg" alt="click_img"></a>
+                            <a href="#" data-toggle="modal" data-target="#centralModalInfo"><img class="img_upay" src="assets/img/upay.svg" alt="upay_img"></a>
+                        </div>
+                    </div>        
+                </div>      
+            </section>
+            <section class="section10">
+                <div class="container">
+                    <div class="foydali_havolalar_wrapper">
+                        <h1 id="SECTION92">
+                            <i class="section10_i"></i>
+                            Фойдали ҳаволалар 
+                            <i class="section10_i"></i>
+                        </h1>
+                    </div>
+                    <div class="foydali_havolalar">
+                        <a href="#" class="foydali_havolalar_items">
+                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
+                            <p class="paragraph_havola" id="SECTION93">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
+                        </a>
+                        <a href="#" class="foydali_havolalar_items">
+                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
+                            <p class="paragraph_havola" id="SECTION94">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
+                        </a>
+                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
+                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
+                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-
     </main>
     <section class="section12">
         <div class="container">

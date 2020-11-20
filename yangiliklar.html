@@ -20,7 +20,7 @@
         <script src="node_modules/fontawesome-free-5.15.1-web/js/all.js"></script>
     </head>
 <body>
-    <header class="header" style=" background-color: #190688;">
+    <header class="header" style="background-color: #190688;">
         <div class="container">
             <div class="row">
                 <div class="header_top">
@@ -30,15 +30,9 @@
                                 <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                             </a>
                             <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                            id="dropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> Ўз
-                            </a>
-                            <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Uz</a>
-                                <a class="dropdown-item" href="#">Рус</a>
-                                <a class="dropdown-item" href="#">EN</a>
-                            </div>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ўз</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рус</a>
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
                             <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                                 <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                             </a>
@@ -76,7 +70,7 @@
                                         <a href="#" class="w3-button w3-block w3-left-align">Матбуот хизмати билан боғланиш</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Раҳбариятнинг чиқиш ва баёнотлари</a>
                                     </div>
-                                <a data-toggle="collapse" href="#collapse_nav3" role="button" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
+                                <a data-toggle="collapse" href="kongilli_yordam.html" role="link" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
                                     <div id="collapse_nav3" class="collapse mobile_nav_link">
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдам бермоқчиман</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдамга муҳтожман</a>
@@ -102,11 +96,11 @@
                     </div>
                     <div class="logos d-flex">
                         <div class="logo_mahalla">
-                            <a href="homepage.html"><img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla"></a>
+                            <a href="homepage.html"> <img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla"></a>
                             <h2 class="logo_mahalla_title">“Маҳалла” ҳайрия жамоат фонди</h2>
                         </div>
                         <div class="logo_xayriya">
-                            <a href="homepage.html"><img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya"></a>
+                            <img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya">
                             <h2 class="logo_xayriya_title">“Саховат ва Кўмак” </h2>
                         </div>
                     </div>
@@ -120,7 +114,8 @@
                 <div class="header_bottom">
                     <div class="navbarr">
                         <ul class="navbar_list">
-                            <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="#" data-toggle="dropdown"> Фонд ҳакида</a>
+                            <li class="navbar_list_item dropdown">
+                                <a class="navbar_list_item_link dropdown-toggle ui-box bottom-leftToRight" href="#" data-toggle="dropdown">Фонд ҳакида</a>
                                 <ul class="dropdown-menu dropdown_menu_list">
                                     <li><a class="dropdown-item" href="#">Фонд ҳакида</a></li>
                                     <li><a class="dropdown-item" href="#">Раҳбарият</a></li>
@@ -167,6 +162,18 @@
                         </ul>
                     </div>
                     <div class="control_icons d-none d-md-flex d-sm-none d-xl-flex d-lg-flex">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn  form-check-label active">
+                              <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
+                              Ўз
+                            </label>
+                            <label class="btn form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Ру
+                            </label>
+                            <label class="btn  form-check-label">
+                              <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off">En
+                            </label>
+                        </div>
                         <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
                             <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                         </a>
@@ -199,17 +206,6 @@
                             </div>
                         </div>
                         <!-- Modal -->
-                        
-                        <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" 
-                        id="dropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> ўз
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Uz</a>
-                              <a class="dropdown-item" href="#">Рус</a>
-                              <a class="dropdown-item" href="#">EN</a>
-                            </div>
                         <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                             <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                         </a>
