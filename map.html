@@ -1,0 +1,655 @@
+<video width="100%" height="90%" controls>
+    <source src="assets/img/01html.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mapsvg.css" rel="stylesheet">
+    <link href="nanoscroller.css" rel="stylesheet">
+    </head>
+<body>
+    <section class="territorial-home">
+        <div class="container">
+             <div class="title">
+                    <h2>Ҳудудий бўлинмалар</h2>              
+                </div> 
+                <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" class="slider1" href="#slider1">Инвестиция бошқариш</a></li>
+      <li><a data-toggle="tab" href="#slider2" class="slider-b slider2">Экспортни мувофиқлаштириш штаби</a></li>
+    </ul>
+    <div class="clearfix"></div>
+        </div>
+    <div class="tab-content">
+      <div id="slider1" class="tab-pane fade in active">
+        
+      <div class="territorial-main territorial-slider1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="territorial">
+                        <div class="map">
+                            <!--<img src="https://mift.uz/assets/public/images/map.png" alt="" />-->
+                            <input type="hidden" id="map-current" value="UZ-TK" />
+                            <style>
+                            .territorial-slider1 #UZ-TK{display: block;}
+                            .territorial-slider1 .mapsvg-marker{display: none;}
+                            </style>
+                            <div id="mapsvg"></div>
+                            <script type="text/javascript">
+    jQuery(document).ready(function(){
+        var maps_slider = $('#map-slider');
+    maps_slider.owlCarousel({
+        loop:true,
+        margin:0,
+        items:1,
+        autoplay: false,
+        nav:true,
+        dots:false,
+        navText : ["<i class='icon-right-arrow'></i>","<i class='icon-right-arrow'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        },
+    }).on('changed.owl.carousel', function(event) { 
+        var current = event.item.index;
+        var src = $(event.target).find(".owl-item").eq(current).find(".item").data('map');
+       var mapcurrent =  $('#map-current').val();
+        $('#'+mapcurrent).css('display','none');
+        $('#'+src).css('display','block');
+        var mapcurrent =  $('#map-current').val(src); 
+        
+    });
+        
+        
+    jQuery("#mapsvg").mapSvg({
+        markerLastID: 1,
+        width: 626,
+        height: 408,
+        colors: {
+            baseDefault: "#000000",
+            background: "rgba(255,255,255,0)",
+            selected: 0,
+            hover: 20,
+            directory: "#fafafa",
+            status: {},
+            base: "#0b0c66",
+            stroke: "#ffffff"
+        },
+        regions: {
+            'UZ-AS': {
+                disabled: true
+            }
+        },
+        viewBox: [-0.283223137254879, 0, 793.0537462745098, 516.87848],
+        cursor: "pointer",
+       // selected:false,
+        zoom: {
+            on: false,
+            limit: [0, 10],
+            delta: 2,
+            buttons: {
+                on: true,
+                location: "right"
+            },
+            mousewheel: true
+        },
+        scroll: {
+            on: false,
+            limit: false,
+            background: false,
+            spacebar: false
+        },
+        tooltips: {
+            mode: "off",
+            on: false,
+            priority: "local",
+            position: "bottom-right"
+        },
+        popovers: {
+            mode: "off",
+            on: false,
+            priority: "local",
+            position: "top",
+            centerOn: true,
+            width: 300,
+            maxWidth: 50,
+            maxHeight: 50,
+            resetViewboxOnClose: true
+        },
+        onClick: function(e,mapsvg
+    ) {
+    
+      var region = this;
+      //alert(region);
+      
+      var item_id = $('.item_'+this.id).val();
+      
+     // console.log(item_id);
+      
+       maps_slider.trigger('to.owl.carousel', item_id, 300);
+    
+    },
+        gauge: {
+            on: false,
+            labels: {
+                low: "low",
+                high: "high"
+            },
+            colors: {
+                lowRGB: {
+                    r: 85,
+                    g: 0,
+                    b: 0,
+                    a: 1
+                },
+                highRGB: {
+                    r: 238,
+                    g: 0,
+                    b: 0,
+                    a: 1
+                },
+                low: "#550000",
+                high: "#ee0000",
+                diffRGB: {
+                    r: 153,
+                    g: 0,
+                    b: 0,
+                    a: 0
+                }
+            },
+            min: 0,
+            max: false
+        },
+        source: "https://mift.uz/assets/public/mapsvg/uzbekistan.svg",
+        title: "Uzbekistan",
+        loadingText: "",
+        markers: [
+            {
+            id: "UZ-TK",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [41.308919, 69.302772]
+        },
+            {
+            id: "UZ-TO",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [41.196894,69.805336]
+        },
+            {
+            id: "UZ-XO",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [41.547525, 60.484363]
+        },
+            {
+            id: "UZ-FA",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.492176, 71.214965]
+        },
+            {
+            id: "UZ-SI",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.445551, 68.702148]
+        },
+            {
+            id: "UZ-SU",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [38.029129, 67.527088]
+        },
+            {
+            id: "UZ-SA",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [39.827064, 66.39771]
+        },
+            {
+            id: "UZ-NG",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.984415, 71.116903]
+        },
+            {
+            id: "UZ-NW",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [42.150151, 64.370036]
+        },
+            {
+            id: "UZ-QA",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [38.879264, 66.262876]
+        },
+            {
+            id: "UZ-JI",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.436222, 67.513156]
+        },
+            {
+            id: "UZ-BU",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.269185, 63.585547]
+        },
+            {
+            id: "UZ-AN",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [40.734107, 72.158803]
+        },
+            {
+            id: "UZ-QR",
+            attached: true,
+            isLink: false,
+            data: {},
+            src: "https://mift.uz/assets/public/images/map-marker2.png",
+            width: 27,
+            height: 37,
+            geoCoords: [43.124004, 60.60694]
+        },
+            ],
+        responsive: true
+    });
+    });
+    
+    </script>
+                        </div>
+                    </div>
+                </div>  
+                              
+                  <input type="hidden" class="item_UZ-TK" value="0" />
+                               
+                  <input type="hidden" class="item_UZ-TO" value="1" />
+                               
+                  <input type="hidden" class="item_UZ-XO" value="2" />
+                               
+                  <input type="hidden" class="item_UZ-FA" value="3" />
+                               
+                  <input type="hidden" class="item_UZ-SI" value="4" />
+                               
+                  <input type="hidden" class="item_UZ-SU" value="5" />
+                               
+                  <input type="hidden" class="item_UZ-SA" value="6" />
+                               
+                  <input type="hidden" class="item_UZ-NG" value="7" />
+                               
+                  <input type="hidden" class="item_UZ-NW" value="8" />
+                               
+                  <input type="hidden" class="item_UZ-QA" value="9" />
+                               
+                  <input type="hidden" class="item_UZ-JI" value="10" />
+                               
+                  <input type="hidden" class="item_UZ-BU" value="11" />
+                               
+                  <input type="hidden" class="item_UZ-AN" value="12" />
+                               
+                  <input type="hidden" class="item_UZ-QR" value="13" />
+                                
+                <div class="col-md-5">
+                    <div class="map-slider-bg">
+                    <div id="map-slider" class="owl-carousel owl-theme">
+                                          <div class="item" data-map="UZ-TK">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Тошкент шаҳар </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Рахманов Шароф Диёрович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:tashkentcity@mift.uz">tashkentcity@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998712100327">+998 (71) 210-03-27</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-TO">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Тошкент вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Абдусаламов Джамшид Абдусаламович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:tashkent@mift.uz">tashkent@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998707625897">+998 (70) 762-58-97</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-XO">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Хоразм вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Туляганов Шавкат Абиджанович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:khorezm@mift.uz">khorezm@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998622230587">+998 (62) 223-05-87</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-FA">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Фарғона вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Абдурахмонов Мухсинхужа Турсунхужаевич</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:fergana@mift.uz">fergana@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998732497007">+998 (73) 249-70-07</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-SI">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Сирдарё вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Madirimov Daniyar Mamatsalievich</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:sirdaryo@mift.uz">sirdaryo@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998672250120">+998 (67) 225-01-20</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-SU">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Сурхондарё вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Орипов Анвар Хомитович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:surkhandaryo@mift.uz">surkhandaryo@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998762233203">+998 (76) 223-32-03</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-SA">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Самарқанд вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Ходжаев Ойбек Эркинович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:samarkand@mift.uz">samarkand@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998662351967">+998 (66) 235-19-67</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-NG">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Наманган вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Имамов Окибжон Одилович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:namangan@mift.uz">namangan@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998692278005">+998 (69) 227-80-05</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-NW">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Навоий вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Жулиев Йулдошмурот Тўрақулович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:navoi@mift.uz">navoi@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998792239980">+998 (79) 223-99-80</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-QA">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Қашқадарё вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Шагазатов Ойбек Баходирович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:kashkadaryo@mift.uz">kashkadaryo@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998752210236">+998 (75) 221-02-36</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-JI">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Жиззах вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Ахмедхаджаев Азим Исраилович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:djizzakh@mift.uz">djizzakh@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998722265624">+998 (72) 226-56-24</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-BU">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Бухоро вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Асадов Ризо Раупович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:bukhara@mift.uz">bukhara@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998652215600">+998 (65) 221-56-00</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-AN">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4>Андижон вилояти </h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5>Хамроев Ботир Бахромжонович</h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:andijan@mift.uz">andijan@mift.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998742332401">+998 (74) 233-24-01</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                            <div class="item" data-map="UZ-QR">
+                      
+                            <div class="map-item">
+                                <div class="map-title">
+                                    <h4><a href="http://miftrk.uz"  target="_blank">Қорақалпоғистон Республикаси инвестициялар ва ташқи савдо вазирлиги</a></h4>
+                                </div>                            
+                                <div class="map-content">
+                                    <ul class="list-unstyled">
+                                                                        <li><h5><a href="http://miftrk.uz/contacts.html"  target="_blank">Хабибуллаев Бахытжан Сагидуллаевич</a></h5></li>
+                                        <li><p><span>Электрон почта:</span></p> <p> <a href="mailto:miftrk@miftrk.uz">miftrk@miftrk.uz</a></p></li>
+                                        <li><p><span>Телефон:</span> </p>
+                                        <p><a href="tel:+998612226091">+99861 222-60-91</a></p>
+                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                    
+                        </div>    
+                                           
+                        </div>            
+                    </div>
+                </div>   
+                <div class="clearfix"></div>    
+            </div>         
+        </div>
+        </div>  </div>
+      <div id="slider2" class="tab-pane fade">
+          </div>
+      <input type="hidden" value="send" id="slider-ajax" />
+         <script>
+       jQuery(document).ready(function(){
+         jQuery('.slider2').click(function(){
+            var status_slider = $('#slider-ajax').val();
+            //console.log(status_slider);
+             if(status_slider == 'send'){
+            jQuery.ajax({
+        type: 'post',
+        url: 'https://mift.uz/uz/ajax/territorial/slider2',
+            success: function(data){
+                var status_slider = $('#slider-ajax').val('no-send');;
+                jQuery('#slider2').html(data);
+            },
+        error: function(data){
+        }
+    });
+    }
+    });
+    });
+        </script>
+         </div>
+     <div class="clearfix"></div>
+    </section>
+
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="jquery.nanoscroller.min.js"></script>
+    <script src="mapsvg.js"></script>
+</body>
+</html>
+
+
+
+

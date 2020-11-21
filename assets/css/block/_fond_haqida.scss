@@ -3,14 +3,34 @@
         color: #190688;
         font-family: Playfair display;
         font-size: 20px;
+       
+        span{
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        .phone, .email , .qabul{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    }
+    h1{
+        letter-spacing: 2px;
+        font-size: 30px;
     }
     h2{
         color: #190688;
         margin: 10px 0;
         font-family: Playfair display;
         font-size: 22px;
-        font-weight: 600;
+        font-weight: 500;
     }
+    h5{
+        font-size: 24px; text-align:center; font-weight: 600; color: #190688;
+        font-family: Playfair display ;
+    }
+   
     .fond-card{
         border-radius: 10px;
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
@@ -25,7 +45,7 @@
             .nav{
                 .nav-item{
                     .nav-link{
-                        color: #190688;
+                        color: #000;
                         font-family:Playfair display ;
                     }
                 }
@@ -34,6 +54,7 @@
     }
     .card-groupes{
         .card{
+            margin-bottom: 40px !important;
             &:hover{
                 box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.15);
                 transition: all 0.3s ease-in-out;
@@ -54,6 +75,21 @@
                     background-color: #190688 !important;
                     color: #ffffff;
                 }
+            }
+        }
+    }
+}
+#v-pills-fond7{
+    .card{
+        .card-body{
+            .card-text{
+                color: #190688;
+                font-family: Playfair display;
+                font-size: 20px;
+            }
+            h4{
+                font-size: 24px; text-align:center; font-weight: 600; color: #190688;
+            font-family: Playfair display ;
             }
         }
     }

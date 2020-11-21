@@ -13,10 +13,18 @@
         font-weight: bold;
         font-size: 30px;
         color: #FFFFFF;
+        hr{
+            height: 65px;
+            border: #FFFFFF 1px solid;
+        }
+        .soya{
+            filter: blur(3px);
+        }
         .logo_mahalla, .logo_xayriya{
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 50%;
             img{
                 width: 76px;
                 height: 70px;
@@ -33,13 +41,14 @@
             }
         }
         .buttons_group_helping{
+            width: 29%;
             .button_help1{ 
                 border:1px solid #190688;
                 border-radius: 30px;
-                width: 80%;
+                width: 85%;
                 height: 35px;
                 padding: 8px 0;
-                margin-bottom: 15px;                
+                margin-bottom: 5px;                
                 animation: pulse1 infinite ease;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
@@ -77,9 +86,10 @@
                   }
             }
             .button_help2{ 
+                font-size: 12px;
                 border:1px solid #FFFFFF;
                 border-radius: 30px;
-                width: 80%;
+                width: 85%;
                 height: 35px;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -135,12 +145,43 @@
                         font-family: Playfair Display;
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 16px;
+                        font-size: 15px;
                         line-height: 18px;
                         text-transform: uppercase;
                         text-decoration: none;
                         color: #FFFFFF;
-                        padding: 10px 10px 0; 
+                        padding: 0px 0px 1px 10px;
+                        margin-left: 10px;   
+                        border-bottom: 0px #FFFFFF solid;
+                        position: relative;
+                        transition: all 1s ease-in-out;
+                        &:after,&:before{
+                            content:" ";
+                            width:0px;
+                            height:0px;
+                            position:absolute;
+                            border :0px solid #fff;
+                            transition:all 0.5s;
+                            }
+                        &::after{
+                            bottom: 0px;
+                            left:-1px;
+                            border-bottom: 2px #FFFFFF solid;
+                        }
+                        &::before{
+                            bottom: 0px;
+                            left: -1px;
+                            border-bottom: 2px #FFFFFF solid;
+                        }
+                        &:hover{
+                            // background:rgba(0,0,0,.5);
+                            // color:white;
+                            &:before,&:after{
+                                width:100%;
+                                height:100%;
+                                // border-color:white;
+                            }
+                        }
                     }
                     .dropdown_menu_list{
                         margin-top: 0px;
@@ -177,6 +218,7 @@
             margin-bottom: 0px;
             margin-top: -15px;
             .eye_icon_img_link{
+                margin-left: 15px;
                 img{
                     width: 35px;
                     height: 35px;
@@ -192,19 +234,19 @@
             }
             .form-check-label{
                 padding: 7px;
-                margin: 5px 10px 0 0;
+                margin: 5px 7px 0 10px;
                 border-radius: 50% !important; 
                 font-family: Playfair Display;
                 font-style: normal;
                 font-size: 14px;
-                line-height: 16px;
+                line-height: 14px;
                 color: #FFFFFF;
                 text-transform: uppercase;
                 background-color: unset !important;
             }
             .active{
                 background-color: #190688 !important;
-                box-shadow: 0px 0px 10px 2px #190688;
+                box-shadow: 0px 0px 10px 2px #fff;
             }
         }
     }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="node_modules/wowjs/css/libs/animate.css">
     <link rel="stylesheet" href="node_modules/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="node_modules/pure-css3-animated-border/css/animated-border/animated-border.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="node_modules/fontawesome-free-5.15.1-web/js/all.js"></script>
 </head>
@@ -27,13 +28,22 @@
                 <div class="header_top">
                     <div class="control_icons d-flex d-sm-flex d-md-none d-xl-none d-lg-none">
                         <div class="control_icons_wrapp">
+                            
+                            <div class="btn-group btn-group-toggle ml-3" data-toggle="buttons">
+                                <label class="btn  form-check-label active">
+                                  <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
+                                  Ўз
+                                </label>
+                                <label class="btn form-check-label">
+                                  <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Ру
+                                </label>
+                                <label class="btn  form-check-label">
+                                  <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off">En
+                                </label>
+                            </div>
                             <a data-toggle="modal" data-target="#exampleModalPreview" class="eye_icon_img_link" href="#">
                                 <img class="eye_icon" src="assets/img/eye 1.png" alt="eye_icon">
                             </a>
-                            <a class="voice_icon_img_link"  href="#"><img class="voice_icon" src="assets/img/voice.png" alt="voice_icon"></a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ўз</a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рус</a>
-                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
                             <a data-toggle="modal" data-target="#exampleModalPreviewpoisk" class="poisk_icon_img_link"  href="#">
                                 <img class="poisk_icon" src="assets/img/lupa.png" alt="poisk_icon">
                             </a>
@@ -95,11 +105,13 @@
                               </div>
                         </div>
                     </div>
-                    <div class="logos d-flex">
+                    <div class="logos d-flex mt-0 pt-0">
                         <div class="logo_mahalla">
                             <a href="homepage.html"> <img class="logo_mahalla_img" src="assets/img/image 22.png" alt="logo_mahalla"></a>
                             <h2 class="logo_mahalla_title">“Маҳалла” ҳайрия жамоат фонди</h2>
                         </div>
+                        <hr>
+                        <hr class="soya">
                         <div class="logo_xayriya">
                             <img class="logo_xayriya_img" src="assets/img/red logo.png" alt="logo_xayriya">
                             <h2 class="logo_xayriya_title">“Саховат ва Кўмак” </h2>
@@ -163,7 +175,7 @@
                         </ul>
                     </div>
                     <div class="control_icons d-none d-md-flex d-sm-none d-xl-flex d-lg-flex">
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group btn-group-toggle ml-3" data-toggle="buttons">
                             <label class="btn  form-check-label active">
                               <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
                               Ўз
@@ -243,7 +255,7 @@
                     <div class="single-item-hero-wrap">
                         <p class="single-item-hero-p">“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
                             деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.</p>
-                        <small>02.10.2020</small>
+                        <small>02/10/2020</small>
                         <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
                     </div>
                     
@@ -251,14 +263,14 @@
                     <a href="#"><img class="img-fluid" src="assets/img/samalyot.jpg" alt="">
                         <p>“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
                             деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.</p>
-                            <small>02.10.2020</small>
+                            <small> 02/10/2020</small>
                             <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
                     </a>
                     <a href="#"><img class="img-fluid" src="assets/img/samarqand.jpg" alt="">
                         <p>“Биз сўнгги йетмиш йил мобайнида давлатга қарамлик ва сиғиниш ҳолатида яшадик. Мамлакатнинг, ундаги барча бойликларнинг, мулкнинг егаси давлат,
                             деб ҳисоблаб келдик.Aна шу масалада ҳам Конституцияда туб бурилиш ясалган.
                         </p>
-                            <small>02.10.2020</small>
+                            <small>02/10/2020</small>
                             <button type="button" class="btn btn-outline-white waves-effect">Батафсил</button>
                     </a>
                 </div>
@@ -813,10 +825,16 @@
             </h1>
             <div class="row">
                <div class="mediateka_left col-md-6 col-xl-6 col-lg-6">
-                   <video width="100%" height="90%" controls>
-                <source src="assets/img/01html.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video></div>
+                    <a href="#"><img class="img-fluid" src="./assets/img/buxoro.jpg" alt="" style="border-radius: 7px; position: relative;"></a>
+                        <a id="play-video" class="video-play-button" href="#">
+                            <span></span>
+                        </a>
+                      
+                      
+                      <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                      </div>   
+                </div>
                 <div class="mediateka_right col-md-6 col-xl-6 col-lg-6">
                     <div class="row">
                         <div class="mediateka_right_1 col-md-6 col-xl-6 col-lg-6"><a href="#"><img src="assets/img/Rectangle 33.png" alt="" style="width: 100%;"></a></div>
@@ -861,7 +879,7 @@
                     <i class="section9_i"></i>
                 </h1>
                 <div class="payment_type">
-                    <a href="#"  data-toggle="modal" data-target="#centralModalInfo" ><img class="img_payme" src="assets/img/payme.svg" alt="payme_img"></a>
+                    <a href="#"  data-toggle="modal" data-target="#centralModalInfo" ><img class="img_payme" src="assets/img/payme_01.svg" width="175px" alt="payme_img"></a>
                     <!--modals-->
                     <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-notify modal-info" role="document">

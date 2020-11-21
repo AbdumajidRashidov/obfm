@@ -29,21 +29,8 @@ a{
 .btn:focus, .btn.focus {
     box-shadow: none;
   }
-  @media (max-width: 450px){
-    .container {
-        max-width: 340px ;
-    }
-}
-  @media (max-width: 576px){
-    .container {
-        max-width: 450px ;
-    }
-}
-  @media (min-width: 576px){
-      .container {
-          max-width: 720px ;
-      }
-  }
+ 
+  
   @media (min-width: 768px) {
       .container {
           max-width: 990px;
