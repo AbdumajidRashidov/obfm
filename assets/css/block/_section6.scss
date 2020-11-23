@@ -4,18 +4,19 @@
         font-family: Playfair Display;
         font-style: normal;
         font-weight: bold;
-        font-size: 50px;
-        line-height: 67px;
+        font-size: 40px;
+        line-height: 60px;
         /* identical to box height */
         text-transform: capitalize;
         color: #190688;
-        padding: 30px 0;
+        padding: 30px;
         i{
             display: block;
             width: 30%;
             height: 3px;
             background: #190688;
             margin-top: 35px;
+            margin-right: 20px !important;
             border: 1px solid #190688;
         }
     }
@@ -52,9 +53,9 @@
                 text-transform: capitalize;
                 color: #FFFFFF;
                 top:120px;
-                left: 10px;
+                left: 20px;
                 p{  
-                    margin: 0 10px;
+                    margin: 0px;
                     margin-bottom: 8px; 
                 }
             }
@@ -79,9 +80,9 @@
                 text-transform: capitalize;
                 color: #FFFFFF;
                 top:120px;
-                left: 10px;
+                left: 20px;
                 p{
-                    margin: 0 10px;
+                    margin: 0px;
                     margin-bottom: 8px;
                 }
             }
@@ -109,9 +110,9 @@
                 text-transform: capitalize;
                 color: #FFFFFF;
                 top:146px;
-                left: 10px;
+                left: 20px;
                 p{
-                    margin: 0 10px;
+                    margin: 0px;
                     margin-bottom: 16px;
                 }
             }
@@ -137,9 +138,9 @@
             line-height: 24px;
             text-transform: capitalize;
             color: #FFFFFF;
-            margin: 0 10px;
+            margin: 0px 20px;
             p{
-                margin: 0 10px;
+                margin: 10px 0;
             }
         }
     }

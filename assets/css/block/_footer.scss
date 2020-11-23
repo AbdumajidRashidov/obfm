@@ -27,7 +27,6 @@
                     width: 35px;
                     height: 35px;
                     margin: 0 10px;
-                    color: #FFFFFF;
                     filter: drop-shadow(0px 5px 10px rgb(173, 172, 172));
                     &:hover{
                         transform: scale(1.2);
@@ -36,22 +35,12 @@
                 }
                 .fa-instagram {
                     border-radius: 10px;
-                    &:hover{
-                        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-                    }
-                }
-                .fa-twitter{
-                    &:hover{
-                        color: rgb(0, 172,238);
-                        filter: drop-shadow(0px 5px 10px   rgb(0, 172,238))
-                    }
                 }
                 .fa-facebook{
                     border-radius: 50%;
                     border-color:  rgb(59, 89, 159);
                     &:hover{
                         color: rgb(59, 89, 159);
-                        background: #FFFFFF;
                     }
                 }
                 .fa-youtube{
@@ -67,7 +56,6 @@
                     border-radius: 50%;
                     &:hover{
                     color:rgb(0, 136, 204);
-                    background-color: #FFFFFF;
                     }
                 }
             }

@@ -6,8 +6,8 @@
             font-family: Playfair Display;
             font-style: normal;
             font-weight: bold;
-            font-size: 46px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 50px;
             /* identical to box height */
             text-transform: capitalize;
             color: #190688;
@@ -34,7 +34,7 @@
           
           .video-play-button {
             position: absolute;
-            z-index: 10;
+            z-index: 1;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
@@ -115,7 +115,7 @@
           
           .video-overlay {
             position: fixed;
-            z-index: -1;
+            z-index:-1;
             top: 0;
             bottom: 0;
             left: 0;
@@ -127,13 +127,13 @@
           
           .video-overlay.open {
             position: fixed;
-            z-index: 1000;
+            z-index: 10000;
             opacity: 1;
           }
           
           .video-overlay-close {
             position: absolute;
-            z-index: 1000;
+            z-index: 0;
             top: 15px;
             right: 20px;
             font-size: 36px;
@@ -186,6 +186,7 @@
                 outline: none;
                 box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.15);
                 background-color: #F1F3F4;
+                border-radius: 5px;
             }
         }
         .button_batafsil_link{

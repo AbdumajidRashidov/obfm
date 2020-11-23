@@ -59,6 +59,17 @@ $('.single-item-hero').slick({
     infinite:true,
     autoplaySpeed: 2000,
   });
+  $('.foydali_havolalar').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows:false,
+    speed: 1000,
+    ssEase: 'linear',
+    dots:true,
+    infinite:true,
+    autoplaySpeed: 2000,
+  });
 
   //statistika pie chart
   am4core.ready(function() {
@@ -405,7 +416,7 @@ $('.single-item-hero').slick({
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-  ScrollReveal({ duration: 2000 });
+  ScrollReveal({ duration: 1000 });
   ScrollReveal().reveal('.header' , {delay:300});
   ScrollReveal().reveal('.slide_fond_news_item',{delay:400});
   ScrollReveal().reveal('.y',{delay:400});
@@ -423,7 +434,6 @@ $('.single-item-hero').slick({
   ScrollReveal().reveal('.section6_left',{delay:400});
   ScrollReveal().reveal('.section6_right',{delay:400});
   ScrollReveal().reveal('.mediateka',{delay:400});
-  ScrollReveal().reveal('.mediateka_left',{delay:400});
   ScrollReveal().reveal('.mediateka_right',{delay:400});
   ScrollReveal().reveal('.statistika',{delay:400});
   ScrollReveal().reveal('.Pay',{delay:400});
@@ -439,7 +449,7 @@ $('.single-item-hero').slick({
   $('#play-video').on('click', function(e){
     e.preventDefault();
     $('#video-overlay').addClass('open');
-    $("#video-overlay").append('<iframe width="560" height="315" src="../assets/img/01html.mp4" frameborder="0" allowfullscreen></iframe>');
+    $("#video-overlay").append('<iframe width="560" height="315" src="../assets/img/01html.mp4" frameborder="0" ></iframe>');
   });
   
   $('.video-overlay, .video-overlay-close').on('click', function(e){
@@ -454,3 +464,9 @@ $('.single-item-hero').slick({
   function close_video() {
     $('.video-overlay.open').removeClass('open').find('iframe').remove();
   };
+
+
+//scrol-down
+function scrollWin() {
+  window.scrollBy(0,810);
+}

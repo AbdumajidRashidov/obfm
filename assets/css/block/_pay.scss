@@ -7,8 +7,8 @@
             font-family: Playfair Display;
             font-style: normal;
             font-weight: bold;
-            font-size: 46px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 50px;
             /* identical to box height */
             text-transform: capitalize;
             color: #190688;
@@ -27,10 +27,31 @@
                 justify-content: space-around;
                 margin-top: 40px;
                 margin-bottom: 40px;
+                img{
+                    &:hover{
+                        animation: pulse 0.5s ease-in ;
+                        @keyframes pulse {
+                            from {
+                              -webkit-transform: scale3d(1, 1, 1);
+                              transform: scale3d(1, 1, 1);
+                            }
+                          
+                            50% {
+                              -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                              transform: scale3d(1.05, 1.05, 1.05);
+                            }
+                          
+                            to {
+                              -webkit-transform: scale3d(1, 1, 1);
+                              transform: scale3d(1, 1, 1);
+                            }
+                        }
+                    }
+                }
                 .img_click{
                     border-left: 2px solid #190688;
                     border-right: 2px solid #190688;
-                    padding:0 40px
+                    padding: 0 40px;
                 }
                 padding-bottom: 50px;
         }
