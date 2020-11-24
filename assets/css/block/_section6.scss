@@ -6,6 +6,7 @@
         font-weight: bold;
         font-size: 40px;
         line-height: 60px;
+        letter-spacing: 1px;
         /* identical to box height */
         text-transform: capitalize;
         color: #190688;
@@ -37,14 +38,14 @@
         .section6_left_1{
             padding: 0 10px;
             .section6_left_1_img{
-                position: absolute;
+                position: relative;
                 &:hover{
                     filter: brightness(1.3);
                     transition: all 0.3s ease-in-out;
                 }
             }
             .section6_left_1_p{
-                position: relative;
+                position: absolute;
                 font-family: Playfair display;
                 font-style: normal;
                 font-weight: bold;
@@ -52,26 +53,24 @@
                 line-height: 24px;
                 text-transform: capitalize;
                 color: #FFFFFF;
-                top:120px;
+                bottom: 40px;
                 left: 20px;
                 p{  
-                    margin: 0px;
-                    margin-bottom: 8px; 
+                    margin: 0px 0 8px 0; 
                 }
             }
         }
         .section6_left_2{
             padding: 0 10px;
             .section6_left_2_img{
-                position: absolute;
+                position: relative;
                 &:hover{
                     filter: brightness(1.3);
                     transition: all 0.3s ease-in-out;
                 }
             }
             .section6_left_2_p{
-                position: relative;
-                position: relative;
+                position: absolute;
                 font-family: Playfair display;
                 font-style: normal;
                 font-weight: bold;
@@ -79,21 +78,19 @@
                 line-height: 24px;
                 text-transform: capitalize;
                 color: #FFFFFF;
-                top:120px;
+                bottom: 40px;
                 left: 20px;
                 p{
-                    margin: 0px;
-                    margin-bottom: 8px;
+                    margin: 0 0 8px 0;
                 }
             }
         }
         .section6_left_bottom{
             padding: 0 10px;
-            margin-bottom: 78px;
             .section6_bottom_img{
-                position: absolute;
+                position: relative;
                 img{
-                    height: 274px;
+                    height: 100%;
                 }
                 &:hover{
                     filter: brightness(1.5);
@@ -101,7 +98,7 @@
                 }
             }
             .section6_bottom_p{
-                position: relative;
+                position: absolute;
                 font-family: Playfair display;
                 font-style: normal;
                 font-weight: bold;
@@ -109,17 +106,15 @@
                 line-height: 24px;
                 text-transform: capitalize;
                 color: #FFFFFF;
-                top:146px;
+                bottom: 40px;
                 left: 20px;
                 p{
-                    margin: 0px;
-                    margin-bottom: 16px;
+                    margin: 0px 0 16px 0;
                 }
             }
         }
     }
     .section6_right{
-        display: grid;
         .section6_right_img{
             position: relative;
             &:hover{
@@ -129,7 +124,7 @@
         }
         .section6_right_p{
             position: absolute;
-            top: 360px;
+            bottom: 40px;
             left: 20px;
             font-family: Playfair display ;
             font-style: normal;

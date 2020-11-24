@@ -70,6 +70,28 @@ $('.single-item-hero').slick({
     infinite:true,
     autoplaySpeed: 2000,
   });
+  $('.foydali_havolalar_2').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows:false,
+    speed: 1000,
+    ssEase: 'linear',
+    dots:true,
+    infinite:true,
+    autoplaySpeed: 2000,
+  });
+  $('.foydali_havolalar_1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows:false,
+    speed: 1000,
+    ssEase: 'linear',
+    dots:true,
+    infinite:true,
+    autoplaySpeed: 2000,
+  });
 
   //statistika pie chart
   am4core.ready(function() {

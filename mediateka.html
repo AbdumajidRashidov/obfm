@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="node_modules/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="node_modules/pure-css3-animated-border/css/animated-border/animated-border.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
-    <script defer src="node_modules/fontawesome-free-5.15.1-web/js/all.js"></script>
+    <link rel="stylesheet" href="node_modules/nanogallery2/dist/css/nanogallery2.min.css" ></link>
+    <link rel="stylesheet" href="node_modules/nanogallery2/src/css/nanogallery2.css">
 </head>
 <body>
     <header class="header" style="background-color: #190688;">
@@ -271,15 +272,153 @@
                       <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                           <h1>Видеогалерея</h1>
-                         
+                         <div class="wrap_video row">
+                             <div class="video col-12">
+                                <div id="my_nanogallery2" data-nanogallery2='{
+                                    "thumbnailWidth": "400",
+                                    "thumbnailHeight": "300",
+                                    "thumbnailBorderVertical": 0,
+                                    "thumbnailBorderHorizontal": 0,
+                                    "colorScheme": {
+                                      "thumbnail": {
+                                        "background": "rgba(255,255,255,1)"
+                                      }
+                                    },
+                                    "thumbnailDisplayTransition": "flipDown",
+                                    "thumbnailDisplayTransitionDuration": 2000,
+                                    "thumbnailDisplayInterval": 110,
+                                    "thumbnailLabel": {
+                                      "position": "overImageOnBottom"
+                                    },
+                                    "thumbnailHoverEffect2": "imageScaleIn80|labelSlideUpTop|labelAppear75",
+                                    "galleryLastRowFull": true,
+                                    "thumbnailAlignment": "center",
+                                    "thumbnailGutterWidth": 10,
+                                    "gallerySorting": "titleasc",
+                                    "thumbnailGutterHeight": 10,
+                                    "galleryFilterTags": true,
+                                    "thumbnailOpenImage": true
+                                  }'>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 1</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 3</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 1</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 1</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 3</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 2</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                </div>
+                             </div>
+                         </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                           <h1>Фотогалерея</h1>
-                          
+                          <div class="wrap_video row">
+                            <div class="video col-12">
+                               <div id="ngy2p"
+                                data-nanogallery2='{
+                                    "thumbnailWidth": "265",
+                                    "thumbnailHeight": "230",
+                                    "thumbnailBorderVertical": 0,
+                                    "thumbnailBorderHorizontal": 0,
+                                    "colorScheme": {
+                                      "thumbnail": {
+                                        "background": "rgba(255,255,255,1)"
+                                      }
+                                    },
+                                    "thumbnailDisplayTransition": "flipDown",
+                                    "thumbnailDisplayTransitionDuration": 2000,
+                                    "thumbnailDisplayInterval": 110,
+                                    "thumbnailLabel": {
+                                      "position": "overImageOnBottom"
+                                    },
+                                    "thumbnailHoverEffect2": "imageScaleIn80|labelSlideUpTop|labelAppear75",
+                                    "galleryLastRowFull": true,
+                                    "thumbnailAlignment": "center",
+                                    "thumbnailGutterWidth": 10,
+                                    "gallerySorting": "titleasc",
+                                    "thumbnailGutterHeight": 10,
+                                    "galleryFilterTags": true,
+                                    "thumbnailOpenImage": true
+                                  }'> 
+                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox >title 2</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox> title 2</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
+                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
+                               </div>
+                            </div>
+                        </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                           <h1>Аудиогалерея</h1>
-                          
+                          <div class="row">
+                              <div class="ml-4 audio_card col-xl-11">
+                                  <div class="row">
+                                      <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
+                                      <div class="col-9 d-flex flex-column align-items-center">
+                                          <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
+                                          <audio controls>
+                                            <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                          </audio>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="ml-4 audio_card col-xl-11">
+                                <div class="row">
+                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
+                                    <div class="col-9 d-flex flex-column align-items-center">
+                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
+                                        <audio controls>
+                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 audio_card col-xl-11">
+                                <div class="row">
+                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
+                                    <div class="col-9 d-flex flex-column align-items-center">
+                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
+                                        <audio controls>
+                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 audio_card col-xl-11">
+                                <div class="row">
+                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
+                                    <div class="col-9 d-flex flex-column align-items-center">
+                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
+                                        <audio controls>
+                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                            
                         </div>
                       </div>
@@ -506,7 +645,7 @@
     <script src="node_modules/wowjs/dist/wow.min.js"></script>
     <script src="assets/js/jquery.nav.js"></script>
     <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
-
+    <script src="node_modules/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="assets/js/main.js"></script>

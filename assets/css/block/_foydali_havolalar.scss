@@ -5,6 +5,7 @@
         font-weight: bold;
         font-size: 40px;
         line-height: 50px;
+        letter-spacing: 1px;
         text-transform: capitalize;
         color: #190688;
         display: flex;justify-content: space-between;
@@ -20,7 +21,7 @@
         }    
     }
 }
-.foydali_havolalar{
+.foydali_havolalar, .foydali_havolalar_2, .foydali_havolalar_1{
     margin-bottom: 80px !important;
     .slick-track{
         background-color: #FFFFFF !important;

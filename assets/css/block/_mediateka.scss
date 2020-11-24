@@ -12,6 +12,7 @@
             text-transform: capitalize;
             color: #190688;
             margin: 50px 0;
+            letter-spacing: 1px;
             .mediateka_i{
                 display: block;
                 width: 40%;
@@ -154,8 +155,8 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            /* width: 90%; */
-            /* height: auto; */
+            width: 90%; 
+             height: auto;
             box-shadow: 0 0 15px rgba(0,0,0,0.75);
           }
         video{
