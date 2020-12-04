@@ -2,7 +2,7 @@
     background-image: linear-gradient(to bottom,#190688 0%, rgba(11, 12, 102, 0) 100%);
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1050 !important;
     padding: 10px;
     .header_top{
         display: flex;

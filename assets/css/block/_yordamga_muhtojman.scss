@@ -1,0 +1,179 @@
+.form{
+    .nice-select{
+        border-bottom: 1px  #190688  solid !important;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+        text-align: left;
+        padding-left: 0;
+        font-size: 1rem;
+        font-family: Playfair display;
+        text-transform: capitalize;
+        color:#190688 ;
+        font-weight: 600;
+        width: 100%;
+        z-index: 1040;
+    }
+    .datepicker{
+        input,.form-control{
+        color: transparent ;
+           border-top: 0 !important;
+           border-right: 0 !important;
+           border-left: 0 !important;
+           padding-left: 10px !important;
+           border-radius: 0 !important;
+           padding-right: 0 !important;
+           &:focus{
+                color: #190688 !important;
+           }
+        }
+        label{
+            padding-left: 0 !important;
+            padding-right: 0  !important;
+            color: #190688 !important;
+            font-weight: 600!important;
+            .active{
+                left: 0px !important;
+                color: #190688 !important;
+                font-weight: 600!important;
+            }
+        }
+    }
+    .md-form{
+        label{
+            color: #190688;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 600;
+                font-family: Playfair display;
+                text-transform: capitalize;
+                &:focus{
+                    color: #190688 !important;
+                }
+        }
+        input{
+            border-bottom: 1px #190688 solid !important; 
+            color: #190688;
+            &:focus{
+                border-bottom: 2px #190688 solid !important; 
+                box-shadow: 0 1px 0 0 #190688 !important;
+            }
+        }
+    }
+    .md-forms{
+        span{
+            color: #190688;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 600;
+            font-family: Playfair display;
+            text-transform: capitalize;
+        }
+        .custom-control{
+            label{
+                color: #190688;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 500;
+            font-family: Playfair display;
+            text-transform: capitalize;
+            }
+            
+            .custom-control-input:checked ~ .custom-control-label::before{
+                border-color: #190688;
+                background-color: #190688;
+                box-shadow: 0 0px 5px 2px #190688 !important
+            }
+        
+        }
+    }
+    .form-group{
+        label{
+            color: #190688;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 600;
+                font-family: Playfair display;
+                text-transform: capitalize;
+        }
+        textarea{
+            color: #190688;
+            border-color: #190688;
+            &:focus{
+                box-shadow: 0px 0px 4px 1px #190688 !important
+            }
+        }
+        .qoidalar{
+            .custom-checkbox{
+                .custom-control-input:checked ~ .custom-control-label::before{
+                    border-color: #190688;
+                    background-color: #190688;
+                }
+            }
+        }
+    }
+}
+.bank_rekvizits{
+    h2{
+        color: #190688;
+        font-family: Playfair display;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+    }
+    .row{
+        .md-form{
+            width: 30%;
+        }
+        .nice-select{
+            border-color: #190688;
+            text-align: left;
+            font-size: 1rem;
+            font-family: Playfair display;
+            text-transform: capitalize;
+            color:#190688 ;
+            font-weight: 600;
+            width: 100%;
+            z-index: 1040;
+            position: relative;
+            top: 110px;
+            left: 15px;
+        }
+        .col-12{
+            .dataTables_wrapper{
+                .dataTables_length{
+                    display: none;
+                }
+                .dataTables_filter {
+                    label{
+                        color: #190688;
+                        font-family: Playfair display;
+                        input{
+                            border-color: #190688;
+                            color: #190688;
+                        }
+                    }
+                }
+                .dataTables_info{
+                    display: none;
+                }
+                .dataTables_paginate{
+                    .pagination{
+                        .active{
+                            .page-link{
+                                background-color: #190688;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        table{
+            font-family: Playfair display;
+            th{
+                font-weight: 600;
+            }
+        }
+    }
+}

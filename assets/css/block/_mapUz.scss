@@ -1,0 +1,106 @@
+.UZmap{
+    #map{
+        h3{
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            color: #190688;
+            display: flex;justify-content: space-between;
+            text-align: center;
+            i{
+                display: block;
+                width: 30%;
+                height: 3px;
+                background:#190688;
+                border: 1px solid #190688;
+                margin-top: 15px;
+            }
+        }
+        margin-bottom: 40px;
+        p{
+            font-size: 14px; 
+            color: #190688;
+            margin: 0 0 5px 0;
+         }
+         
+         .map_dacription_block{
+             display: flex;
+             align-items: stretch;
+             justify-content: stretch;
+            img{
+                margin-right: 20px;
+            }
+         }
+        #map_holder{
+            #map_inner{
+                svg{
+                   rect.sm_location_0{
+                       fill:#190688 !important;
+                   } 
+                }
+                div{
+                    svg{
+                        text{
+                            tspan{
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+            #map_zoom{
+                svg{
+                    path{
+                        width: 20px !important;
+                        path{
+                            width: 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foydali_havolalar_new{
+        h3{
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            color: #190688;
+            display: flex;justify-content: space-between;
+            text-align: center;
+            margin-bottom: 30px;
+            i{
+                display: block;
+                width: 40%;
+                height: 3px;
+                background:#190688;
+                border: 1px solid #190688;
+                margin-top: 15px;
+            }
+        }
+        .foydali_link{
+            margin-bottom: 20px;
+            a{
+                color: #190688;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: Playfair display;
+                text-transform: capitalize;
+                text-align: center;
+                opacity: 0.7;
+                &:hover{
+                    opacity:(1);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}

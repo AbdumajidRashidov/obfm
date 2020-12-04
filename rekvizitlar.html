@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
     <link rel="icon" href="assets/img/image 22.png">
     <link rel="stylesheet" href="node_modules/wowjs/css/libs/animate.css">
-    <link rel="stylesheet" href="node_modules/fontawesome-free-5.15.1-web/css/all.css">
-    <link rel="stylesheet" href="node_modules/pure-css3-animated-border/css/animated-border/animated-border.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
-    <link rel="stylesheet" href="node_modules/nanogallery2/dist/css/nanogallery2.min.css" ></link>
-    <link rel="stylesheet" href="node_modules/nanogallery2/src/css/nanogallery2.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/datatables.min.css">
+    <link href="node_modules/mdbootstrap/css/addons/datatables-select.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header" style="background-color: #190688;">
@@ -114,7 +114,7 @@
                         <hr class="soya">
                         <div class="logo_xayriya">
                             <img class="logo_xayriya_img" src="assets/img/logo_saxovat.svg" alt="logo_xayriya">
-                            <h2 class="logo_xayriya_title text-center">“Саховат ва Кўмак” жамғармаси </h2>
+                            <h2 class="logo_xayriya_title text-center">“Саховат ва Кўмак” жамғармаси</h2>
                         </div>
                     </div>
                     <div class="buttons_group_helping">
@@ -253,176 +253,219 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb" style="background-color: #190688;">
                     <li class="breadcrumb-item"><a class="white-text" href="homepage.html">Асосий</a></li>
-                    <li class="breadcrumb-item active"><a href="mediateka.html" style="color: #ffffff; opacity: 0.8;">Медиатека</a></li>
+                    <li class="breadcrumb-item active"><a href="rekvizitlar.html" style="color: #ffffff; opacity: 0.8;">Ҳисоб рақамлари</a></li>
                   </ol>
                 </nav>
             </div>
-            <div class="wrapp_main mb-5">
+            <div class="bank_rekvizits">
+                <h2 class='mb-3'>Банк ҳисоб рақамлари</h2>
                 <div class="row">
-                    <div class="col-3">
-                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                          aria-controls="v-pills-home" aria-selected="true">Видеогалерея</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                          aria-controls="v-pills-profile" aria-selected="false">Фотогалерея</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                          aria-controls="v-pills-messages" aria-selected="false">Аудиогалерея</a>
-                      </div>
+                    <div class="md-form">
+                        <select class="mb-5">
+                            <option data-display="Қорақалпоғистон Реснубликаси">Қорақалпоғистон Реснубликаси</option>
+                            <option value="2">Тошкент шаҳри</option>
+                            <option value="3">Бухоро вилояти</option>
+                            <option value="4">Жиззах вилояти</option>
+                            <option value="5">Навоий вилояти</option>
+                            <option value="6">Наманган вилояти</option>
+                            <option value="7">Самарқанд вилояти</option>
+                            <option value="8">Сирдарё вилояти</option>
+                            <option value="9">Сурхондарё вилояти</option>
+                            <option value="10">Қашқадарё вилояти</option>
+                            <option value="11">Хоразм вилояти</option>
+                            <option value="12">Фарғона вилояти</option>
+                            <option value="13">Андижон вилояти</option>
+                            <option value="14">Тошкент вилояти</option>
+                            <option value="15">Чет эл</option>
+                        </select>
                     </div>
-                    <div class="col-9">
-                      <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                          <h1>Видеогалерея</h1>
-                         <div class="wrap_video row">
-                             <div class="video col-12">
-                                <div id="my_nanogallery2" data-nanogallery2='{
-                                    "thumbnailWidth": "400",
-                                    "thumbnailHeight": "300",
-                                    "thumbnailBorderVertical": 0,
-                                    "thumbnailBorderHorizontal": 0,
-                                    "colorScheme": {
-                                      "thumbnail": {
-                                        "background": "rgba(255,255,255,1)"
-                                      }
-                                    },
-                                    "thumbnailDisplayTransition": "flipDown",
-                                    "thumbnailDisplayTransitionDuration": 2000,
-                                    "thumbnailDisplayInterval": 110,
-                                    "thumbnailLabel": {
-                                      "position": "overImageOnBottom"
-                                    },
-                                    "thumbnailHoverEffect2": "imageScaleIn80|labelSlideUpTop|labelAppear75",
-                                    "galleryLastRowFull": true,
-                                    "thumbnailAlignment": "center",
-                                    "thumbnailGutterWidth": 10,
-                                    "gallerySorting": "titleasc",
-                                    "thumbnailGutterHeight": 10,
-                                    "galleryFilterTags": true,
-                                    "thumbnailOpenImage": true
-                                  }'>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 1</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 3</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 1</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 1</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 3</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/buxoro.jpg" data-nanogallery2-lightbox>title 2</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                    <a href="assets/img/01html.mp4" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                </div>
-                             </div>
-                         </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                          <h1>Фотогалерея</h1>
-                          <div class="wrap_video row">
-                            <div class="video col-12">
-                               <div id="ngy2p"
-                                data-nanogallery2='{
-                                    "thumbnailWidth": "265",
-                                    "thumbnailHeight": "230",
-                                    "thumbnailBorderVertical": 0,
-                                    "thumbnailBorderHorizontal": 0,
-                                    "colorScheme": {
-                                      "thumbnail": {
-                                        "background": "rgba(255,255,255,1)"
-                                      }
-                                    },
-                                    "thumbnailDisplayTransition": "flipDown",
-                                    "thumbnailDisplayTransitionDuration": 2000,
-                                    "thumbnailDisplayInterval": 110,
-                                    "thumbnailLabel": {
-                                      "position": "overImageOnBottom"
-                                    },
-                                    "thumbnailHoverEffect2": "imageScaleIn80|labelSlideUpTop|labelAppear75",
-                                    "galleryLastRowFull": true,
-                                    "thumbnailAlignment": "center",
-                                    "thumbnailGutterWidth": 10,
-                                    "gallerySorting": "titleasc",
-                                    "thumbnailGutterHeight": 10,
-                                    "galleryFilterTags": true,
-                                    "thumbnailOpenImage": true
-                                  }'> 
-                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox >title 2</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox> title 2</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                   <a href="assets/img/namangan.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 2</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                                   <a href="assets/img/andijon.jpg" data-ngthumb="assets/img/andijon.jpg" data-nanogallery2-lightbox>title 1</a>
-                                   <a href="assets/img/buxoro.jpg" data-ngthumb="assets/img/namangan.jpg" data-nanogallery2-lightbox>title 3</a>
-                               </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                          <h1>Аудиогалерея</h1>
-                          <div class="row">
-                              <div class="ml-4 audio_card col-xl-11">
-                                  <div class="row">
-                                      <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
-                                      <div class="col-9 d-flex flex-column align-items-center">
-                                          <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
-                                          <audio controls>
-                                            <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                          </audio>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="ml-4 audio_card col-xl-11">
-                                <div class="row">
-                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
-                                    <div class="col-9 d-flex flex-column align-items-center">
-                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
-                                        <audio controls>
-                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
-                                          Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ml-4 audio_card col-xl-11">
-                                <div class="row">
-                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
-                                    <div class="col-9 d-flex flex-column align-items-center">
-                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
-                                        <audio controls>
-                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
-                                          Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ml-4 audio_card col-xl-11">
-                                <div class="row">
-                                    <div class="col-3"><img src="assets/img/jizzax.jpg" width="180" alt="img_audio"></div>
-                                    <div class="col-9 d-flex flex-column align-items-center">
-                                        <h2>Audio Sarlavhas Lorem ipsum dolor sit amet.</h2>
-                                        <audio controls>
-                                          <source src="assets/img/Samsung_piano_ringtone_(ringon.site).mp3" type="audio/mpeg">
-                                          Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                           
-                        </div>
-                      </div>
+                    <div class="col-12">
+                        <table id="example" class="table table-bordered table-striped table-hover" width="100%">
+                            
+                            <thead>
+                            <tr>
+                                <th class="th-sm text-center" rowspan="2">Туман шаҳар номи
+                                </th> 
+                                <th class="th-sm text-center" rowspan="2">СТИР
+                                </th>
+                                <th class="th-sm text-center" rowspan="2" >Банк филиали номи
+                                </th>
+                                <th class="th-sm text-center" colspan="3">Ҳисобрақамлари
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="th-sm text-center">UZS
+                                </th>
+                                <th class="th-sm text-center" >USD
+                                </th>
+                                <th class="th-sm text-center">EUR
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Cedric Kelly</td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>2012/03/29</td>
+                                <td>$433,060</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="assets/img/iconP.svg" download><button class="btn blue-gradient mb-4">Dowload PDF</button></a>
                     </div>
                 </div>
             </div>
@@ -537,13 +580,6 @@
             </section>
         </div>
     </main>
-
-
-
-
-
-
-
     <section class="section12">
         <div class="container">
             <section class="section11  d-none d-md-none d-sm-none d-xl-flex d-lg-flex">
@@ -642,16 +678,24 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
-    <script src="node_modules/wowjs/dist/wow.min.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
-    <script src="node_modules/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
     <script src="assets/js/mapdata.js"></script>
     <script src="assets/js/countrymap.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="node_modules/mdbootstrap/js/addons/datatables.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/datatables-select.min.js" type="text/javascript"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/button.js" async></script>
+    <script>
+        $(document).ready(function() {
+        $('select').niceSelect();
+        });
+        $(document).ready(function() {
+        $('#example').DataTable( {
+            "sort":false,
+        } );
+        } );
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="oz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +79,7 @@
                                         <a href="#" class="w3-button w3-block w3-left-align">Матбуот хизмати билан боғланиш</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Раҳбариятнинг чиқиш ва баёнотлари</a>
                                     </div>
-                                <a data-toggle="collapse" href="kongilli_yordam.html" role="link" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
+                                <a data-toggle="collapse" href="#collapse_nav3" role="link" aria-expanded="false" aria-controls="collapse_nav">Кўнгилли ёрдам</a>
                                     <div id="collapse_nav3" class="collapse mobile_nav_link">
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдам бермоқчиман</a>
                                         <a href="#" class="w3-button w3-block w3-left-align">Ёрдамга муҳтожман</a>
@@ -112,12 +112,12 @@
                         <hr class="soya">
                         <div class="logo_xayriya">
                             <img class="logo_xayriya_img" src="assets/img/logo_saxovat.svg" alt="logo_xayriya">
-                            <h2 class="logo_xayriya_title">“Саховат ва Кўмак” </h2>
+                            <h2 class="logo_xayriya_title text-center">“Саховат ва Кўмак” жамғармаси </h2>
                         </div>
                     </div>
                     <div class="buttons_group_helping">
                         <a href="kongilli_yordam.html" class="btn button_help1">Ёрдам бермоқчиман</a>
-                        <a class="btn  button_help2">Ёрдамга Мухтожман</a>
+                        <a href="yordamga_muhtojman.html" class="btn  button_help2">Ёрдамга Мухтожман</a>
                     </div>
                 </div>
             </div>
@@ -147,8 +147,8 @@
                             <li class="navbar_list_item dropdown"><a class="navbar_list_item_link dropdown-toggle" href="kongilli_yordam.html" data-toggle="dropdown"> кўнгилли ёрдам </a>
                                 <ul class="dropdown-menu dropdown_menu_list">
                                     <li><a class="dropdown-item" href="kongilli_yordam.html">Ёрдам бермоқчиман</a></li>
-                                    <li><a class="dropdown-item" href="kongilli_yordam.html">Ёрдамга муҳтожман</a></li>
-                                    <li><a class="dropdown-item" href="kongilli_yordam.html">Кўрсатилган ёрдамлар</a></li>
+                                    <li><a class="dropdown-item" href="yordamga_muhtojman.html">Ёрдамга муҳтожман</a></li>
+                                    <li><a class="dropdown-item" href="kongilli_yordam.html">Кўрсатилган ҳайриялар</a></li>
                                     <li><a class="dropdown-item" href="kongilli_yordam.html">Ҳисоб рақамлари</a></li>
                                 </ul>
                             </li>
@@ -201,13 +201,14 @@
                                         <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel">Ранг схемаси:
                                             <button onclick="myFunctionfilterWhite()" class="btn btn-outline-primary waves-effect" style="font-size: 12px; padding: 7px 10px; border-radius: 50%;">A</button>
                                             <button onclick="myFunctionFilterBlack()" class="btn btn-elegant waves-effect" style="font-size: 14px; padding: 8px 11px; border-radius: 50%;">A</button>
-                                            <button onclick="myFunctionFilterBlackGreen()" class="btn btn-outline-success waves-effect" style="font-size: 14px; padding: 7px 10px; border-radius: 50%;">A</button>
                                         </h5>
                                         <h5 class="modal-title" style="margin-right: 30px;" id="exampleModalPreviewLabel">Расмлар:
                                             <button class="btn btn-outline-primary waves-effect" style="font-size: 12px; padding: 7px 10px; border-radius: 50%;">
-                                                <i class="fas fa-image"></i>
+                                                <img src="assets/img/img_icon.svg">
                                             </button>
-                                            <button class="btn btn-elegant waves-effect" style="font-size: 14px; padding: 8px 11px; border-radius: 50%;"><i class="fas fa-image"></i></button>
+                                            <button class="btn btn-elegant waves-effect" style="font-size: 14px; padding: 8px 11px; border-radius: 50%;">
+                                                <img src="assets/img/img_icon_WHITE.svg">
+                                            </button>
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -256,7 +257,7 @@
                     </nav>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-xl-3 col-lg-4 col-md-12">
                   <div class="nav flex-column nav-pills mb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-fond1" role="tab"
                       aria-controls="v-pills-home" aria-selected="true">Фонд ҳақида</a>
@@ -274,7 +275,7 @@
                      aria-controls="v-pills-page5" aria-selected="false">Тасарруфидаги ташкилотлар</a>
                   </div>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-xl-9 col-lg-8 col-md-12 ">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-fond1" role="tabpanel" aria-labelledby="v-pills-home-tab">
                       <h1>Мақсад ва вазифалари</h1>
@@ -370,20 +371,20 @@
                         <div class="fond-card-content">
                           <ul class="nav nav-tabs" id="myTab" role="tablist">
                               <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home"
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home"
                                   aria-selected="true">Раҳбарият</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile"
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile"
                                   aria-selected="false">Биография</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact"
+                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact"
                                   aria-selected="false">Лавозим мажбуриятлари</a>
                               </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+                              <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">
                                   <h2>
                                       "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
                                   </h2>
@@ -395,7 +396,7 @@
                                     <span class="email"> Email : hayriya@mahalla.uz</span>
                                   </p>
                               </div>
-                              <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                              <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
                                   <p>
                                       Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                       Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
@@ -403,7 +404,7 @@
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
                                   </p>
                               </div>
-                              <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+                              <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab">
                                   <p>
                                       Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                       Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
@@ -414,57 +415,7 @@
                             </div>
                         </div>
                       </div>
-                      <div class="fond-card" style="display: flex;">
-                        <div class="fond-card-img mr-4">
-                            <img src="./assets/img/usmanov.jpg" alt="usmanov-img" width="200px" height="250px">
-                        </div>
-                        <div class="fond-card-content">
-                          <ul class="nav nav-tabs" id="myTab" role="tablist">
-                              <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home"
-                                  aria-selected="true">Раҳбарият</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile"
-                                  aria-selected="false">Биография</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact"
-                                  aria-selected="false">Лавозим мажбуриятлари</a>
-                              </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
-                                  <h2>
-                                      "Маҳалла" хайрия жамоат фонди республика бошқарув раиси
-                                  </h2>
-                                  <p>
-                                      Раҳбар : <span >Усманов Дилшодбек Абдуманнонович</span>  <br><br>
-                                      
-                                  <span class="qabul">Қабул : 10.00-12.00</span> <br>
-                                    <span class="phone"> Телефон : +998 71 232 17 56 </span> <br>
-                                    <span class="email"> Email : hayriya@mahalla.uz</span>
-                                  </p>
-                              </div>
-                              <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
-                                  <p>
-                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
-                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
-                                  </p>
-                              </div>
-                              <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
-                                  <p>
-                                      Биография Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                      Sunt natus enim neque? Obcaecati magni eum sint atque sit labore,
-                                      pariatur fugit, asperiores quaerat veniam, magnam eligendi eveniet quidem? Consequatur, officia.
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis?
-                                  </p>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+                      
                     </div>
                     <div class="tab-pane fade" id="v-pills-fond6" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                       <h1>Ҳудудий фондлар</h1>
@@ -476,7 +427,7 @@
                             <div class="view overlay">
                                 <img class="card-img-top" src="assets/img/qoraqalpogiston.jpg"
                                 alt="Card image cap">
-                                <a href="#!">
+                                <a href="hududiy_fondlar.html">
                                 <div class="mask rgba-white-slight"></div>
                                 </a>
                             </div>
@@ -488,7 +439,7 @@
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                 content.</p>
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                <button type="button" class="btn  btn-md">Read more</button>
+                                <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                             </div>
                             <!-- Card content -->
                             </div>
@@ -499,7 +450,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/andijon.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -511,7 +462,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                             </div>
@@ -522,7 +473,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/buxoro.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -534,7 +485,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                                 </div>
@@ -546,7 +497,7 @@
                             <div class="view overlay">
                                 <img class="card-img-top" src="assets/img/jizzax.jpg"
                                 alt="Card image cap">
-                                <a href="#!">
+                                <a href="hududiy_fondlar.html">
                                 <div class="mask rgba-white-slight"></div>
                                 </a>
                             </div>
@@ -559,7 +510,7 @@
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                 content.</p>
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                         
                             </div>
                             <!-- Card content -->
@@ -572,7 +523,7 @@
                             <div class="view overlay">
                                 <img class="card-img-top" src="assets/img/navoiy.jpg"
                                 alt="Card image cap">
-                                <a href="#!">
+                                <a href="hududiy_fondlar.html">
                                 <div class="mask rgba-white-slight"></div>
                                 </a>
                             </div>
@@ -584,7 +535,7 @@
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                 content.</p>
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                             </div>
                             <!-- Card content -->
                             </div>
@@ -595,7 +546,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/namangan.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -607,7 +558,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                                 </div>
@@ -618,7 +569,7 @@
                                     <div class="view overlay">
                                         <img class="card-img-top" src="assets/img/samarqand (1).jpg"
                                         alt="Card image cap">
-                                        <a href="#!">
+                                        <a href="hududiy_fondlar.html">
                                         <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
@@ -630,7 +581,7 @@
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                         content.</p>
                                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                        <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                     </div>
                                     <!-- Card content -->
                                 </div>
@@ -641,7 +592,7 @@
                                     <div class="view overlay">
                                         <img class="card-img-top" src="assets/img/sirdaryo.jpg"
                                         alt="Card image cap">
-                                        <a href="#!">
+                                        <a href="hududiy_fondlar.html">
                                         <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
@@ -653,7 +604,7 @@
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                         content.</p>
                                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                        <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                     </div>
                                     <!-- Card content -->
                                     </div>
@@ -665,7 +616,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/surxondaryo.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -678,7 +629,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                             
                                 </div>
                                 <!-- Card content -->
@@ -691,7 +642,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/toshkentviloyati.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -703,7 +654,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                                 </div>
@@ -714,7 +665,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/xorazm.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -726,7 +677,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                                 </div>
@@ -737,7 +688,7 @@
                                     <div class="view overlay">
                                         <img class="card-img-top" src="assets/img/fargona.jpg"
                                         alt="Card image cap">
-                                        <a href="#!">
+                                        <a href="hududiy_fondlar.html">
                                         <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
@@ -749,7 +700,7 @@
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                         content.</p>
                                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                        <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                     </div>
                                     <!-- Card content -->
                                 </div>
@@ -760,7 +711,7 @@
                                     <div class="view overlay">
                                         <img class="card-img-top" src="assets/img/qashqadaryo.jpg"
                                         alt="Card image cap">
-                                        <a href="#!">
+                                        <a href="hududiy_fondlar.html">
                                         <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
@@ -772,7 +723,7 @@
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                         content.</p>
                                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                        <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                     </div>
                                     <!-- Card content -->
                                     </div>
@@ -784,7 +735,7 @@
                                 <div class="view overlay">
                                     <img class="card-img-top" src="assets/img/toshkent.jpg"
                                     alt="Card image cap">
-                                    <a href="#!">
+                                    <a href="hududiy_fondlar.html">
                                     <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
@@ -797,7 +748,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                     content.</p>
                                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                    <button type="button" class="btn btn-primary btn-md">Read more</button>
+                                    <a style="background-color: #190688; color: #ffffff;" href="hududiy_fondlar.html" type="button" class="btn  btn-md">Read more</a>
                                 </div>
                                 <!-- Card content -->
                                 </div>
@@ -969,7 +920,7 @@
                         <div class="card mb-4 mr-3" style="width: 40%;">
                             <!-- Card image -->
                             <div class="view overlay">
-                                <a href="#">
+                                <a href="tasarrufidagi_tashkilotlar.html">
                                     <img class="card-img-top img-fluid" src="assets/img/logo_saxovat.svg"
                                     alt="Card image cap" >
                                 </a>
@@ -992,6 +943,55 @@
                 </div>
             </div>
             </div>
+            <section class="UZmap">
+                <div class="container">
+                    <div class="row">
+                    <div id="map" class="col-7">
+                        <h3>
+                            <i class="section10_i"></i>
+                            Ҳудудий фондлар
+                            <i class="section10_i"></i>
+                        </h3>
+                    </div>
+                    <div class="col-5 foydali_havolalar_new">
+                        <h3>
+                            <i class="section10_i"></i>
+                            Фойдали ҳаволалар 
+                        </h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/press.png" alt="logo_havola" width="60" height="25">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                                <div class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/portal.png" alt="logo_havola" width="60" height="25">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                                <div class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/gov_uz.png" alt="logo_havola" width="50" height="30">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/prezident_uz.png" alt="logo_havola" width="40" height="40">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                                <div  class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/prezident_uz.png"  alt="logo_havola" width="40" height="40">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                                <div class="foydali_link d-flex">
+                                    <img class="mr-2" src="assets/img/prezident_uz.png" alt="logo_havola" width="40" height="40">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
             <section class="section9">
                 <div class="container">
                     <div class="Pay">
@@ -1052,55 +1052,6 @@
                     </div>        
                 </div>      
             </section>
-            <section class="section10">
-                <div class="container">
-                    <div class="foydali_havolalar_wrapper">
-                        <h1 id="SECTION92">
-                            <i class="section10_i"></i>
-                            Фойдали ҳаволалар 
-                            <i class="section10_i"></i>
-                        </h1>
-                    </div>
-                    <div class="foydali_havolalar">
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                        <a href="#" class="foydali_havolalar_items d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
-                            <img class="logo_havola" src="assets/img/logo_havola.png" alt="logo_havola">
-                            <p class="paragraph_havola" id="SECTION95">Ўзбекистон Республикаси Соғлиқни сақлаш бошқармаси</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
         </div>
     </main>
     <section class="section12">
@@ -1114,40 +1065,40 @@
             <div class="collapse row" id="collapseExample">
                 <div class="font_haqida_collapse col-xl-4 col-lg-4">
                     <ul class="fond_haqida_list" id="SECTION122">Фонд ҳақида
-                        <li><a href="#" id="SECTION123">Фонд ҳақида</a></li>
-                        <li><a href="#" id="SECTION124">Раҳбарият</a></li>
-                        <li><a href="#" id="SECTION125">Марказий аппарат</a></li>
-                        <li><a href="#" id="SECTION126">Тузилма</a></li>
-                        <li><a href="#" id="SECTION127">Низом</a></li>
-                        <li><a href="#" id="SECTION128">Ҳудудий фондлар</a></li>
-                        <li><a href="#" id="SECTION129">Тасарруфидаги ташкилотлар</a></li>
-                        <li><a href="#" id="SECTION1210">Алоқа</a></li>
+                        <li><a href="font_haqida.html" id="SECTION123">Фонд ҳақида</a></li>
+                        <li><a href="font_haqida.html" id="SECTION124">Раҳбарият</a></li>
+                        <li><a href="font_haqida.html" id="SECTION125">Марказий аппарат</a></li>
+                        <li><a href="font_haqida.html" id="SECTION126">Тузилма</a></li>
+                        <li><a href="font_haqida.html" id="SECTION127">Низом</a></li>
+                        <li><a href="font_haqida.html" id="SECTION128">Ҳудудий фондлар</a></li>
+                        <li><a href="font_haqida.html" id="SECTION129">Тасарруфидаги ташкилотлар</a></li>
+                        <li><a href="aloqa.html" id="SECTION1210">Алоқа</a></li>
                     </ul>
                 </div>
                 <div class="matbuot_xizmati_collapse col-xl-4 col-lg-4">
                     <ul class="matbuot_xizmati_list" id="SECTION1211">Матбуот хизмати
-                        <li><a href="#"id="SECTION1212">Эълонлар</a></li>
-                        <li><a href="#"id="SECTION1213">Матбуот хизмати билан боғланиш</a></li>
-                        <li><a href="#"id="SECTION1214">Раҳбариятнинг чиқиш ва баёнотлари</a></li>
+                        <li><a href="matbuot_xizmati.html"id="SECTION1212">Эълонлар</a></li>
+                        <li><a href="matbuot_xizmati.html"id="SECTION1213">Матбуот хизмати билан боғланиш</a></li>
+                        <li><a href="matbuot_xizmati.html"id="SECTION1214">Раҳбариятнинг чиқиш ва баёнотлари</a></li>
                     </ul>
                     <ul class="kongilli_yordam_list"id="SECTION1215">Кўнгилли ёрдам
-                        <li><a href="#"id="SECTION1216">Ёрдам бермоқчиман</a></li>
-                        <li><a href="#"id="SECTION1217">Ёрдамга муҳтожман</a></li>
-                        <li><a href="#"id="SECTION1218">Кўрсатилган ёрдам</a></li>
-                        <li><a href="#"id="SECTION1219">Банк реквизитлари</a></li>
+                        <li><a href="kongilli_yordam.html"id="SECTION1216">Ёрдам бермоқчиман</a></li>
+                        <li><a href="yordamga_muhtojman.html"id="SECTION1217">Ёрдамга муҳтожман</a></li>
+                        <li><a href="korsatilgan_yordamlar.html"id="SECTION1218">Кўрсатилган ёрдам</a></li>
+                        <li><a href="Bank_rekvizitlari"id="SECTION1219">Банк реквизитлари</a></li>
                     </ul>
                 </div>
                 <div class="yangiliklar_collapse col-xl-4 col-lg-4">
                     <ul class="yangiliklar_list"id="SECTION1220">Янгиликлар
-                        <li><a href="#"id="SECTION1221">Фонд янгиликлари</a></li>
-                        <li><a href="#"id="SECTION1222">Ўзбекистон янгиликлари</a></li>
-                        <li><a href="#"id="SECTION1223">Жаҳон янгиликлари</a></li>
-                        <li><a href="#"id="SECTION1224">Саҳоват ва кўмак янгиликлари</a></li>
+                        <li><a href="yangiliklar.html"id="SECTION1221">Фонд янгиликлари</a></li>
+                        <li><a href="yangiliklar.html"id="SECTION1222">Ўзбекистон янгиликлари</a></li>
+                        <li><a href="yangiliklar.html"id="SECTION1223">Жаҳон янгиликлари</a></li>
+                        <li><a href="yangiliklar.html"id="SECTION1224">Саҳоват ва кўмак янгиликлари</a></li>
                     </ul>
                     <ul class="mediateka_list"id="SECTION1225">Медиатека
-                        <li><a href="#"id="SECTION1226">Фотогалерея</a></li>
-                        <li><a href="#" id="SECTION1227">Видеогалерея</a></li>
-                        <li><a href="#"id="SECTION1228">Аудиогалерея</a></li>
+                        <li><a href="mediateka.html"id="SECTION1226">Фотогалерея</a></li>
+                        <li><a href="mediateka.html" id="SECTION1227">Видеогалерея</a></li>
+                        <li><a href="mediateka.html"id="SECTION1228">Аудиогалерея</a></li>
                     </ul>
                 </div>
             </div>
@@ -1180,13 +1131,13 @@
                 </p>
                 <br>
             </div>
-            <div class="second_column col-xl-4  col-lg-4 col-md-4 col-sm-6 col-6 d-md-none d-sm-block d-lg-none d-block d-xl-none">
+            <div class="second_column col-xl-4  col-lg-4 col-md-4 col-sm-8 col-8 d-md-none d-sm-block d-lg-none d-block d-xl-none">
                 <div class="social_media">
-                    <a class="logo_instagram" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="logo_twitter" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="logo_fb" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="logo_yt" href="#"><i class="fab fa-youtube"></i></a>
-                    <a class="logo_tg" href="#"><i class="fab fa-telegram"></i></a>
+                    <a class="logo_instagram" href="#"><img src="assets/img/instagram-logo.svg" alt="logo-intagram" class="fab fa-instagram mr-2"></a>
+                    <a class="logo_twitter" href="#"><img src="assets/img/twitter.svg" alt="logo-twitter" class="fab fa-twitter  mr-2"></a>
+                    <a class="logo_fb" href="#"><img src="assets/img/facebook.svg" alt="logo-facebook" class="fab fa-facebook  mr-2"></a>
+                    <a class="logo_yt" href="#"><img src="assets/img/youtube.svg" alt="youtube-logo" class="fab fa-youtube  mr-2"></a>
+                    <a class="logo_tg" href="#"><img src="assets/img/telegram.svg" alt="logo-telegram"  class="fab fa-telegram  mr-2"></a>
                 </div>
                 <div class="name_of_year">
                     <a href="#"><img src="assets/img/nameOfYear.png" alt=""></a>
@@ -1207,6 +1158,8 @@
     <script src="node_modules/jquery-nice-select/js/jquery.nice-select.min.js"></script>
     <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="assets/js/mapdata.js"></script>
+    <script src="assets/js/countrymap.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="assets/js/main.js"></script>

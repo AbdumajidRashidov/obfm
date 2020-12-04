@@ -125,4 +125,27 @@
                     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, .20);
                 } 
             }  
+            .button_batafsil_link{
+                width: 150px;
+                display: block;
+                color: #190688;
+                text-decoration: none;
+                padding-bottom: 10px;
+                padding-left: 0;
+                .button_batafsil{
+                    display: flex;
+                    padding:5px 13px;
+                    width: 150px;
+                    border-color:#190688;
+                    border:2px solid;
+                    border-radius: 20px;
+                    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.685));
+                    justify-content: space-around;
+                    margin-left: 0;
+                    &:hover{
+                        transform: scale(1.07);
+                        transition: all .3s ease-in-out;
+                    }  
+                }
+            }
 }
